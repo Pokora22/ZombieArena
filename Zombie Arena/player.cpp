@@ -119,8 +119,6 @@ void Player::update(float elapsedTime, Vector2i mousePosition, std::vector<Tile 
     for(int i = 0; i < walls.size(); i++)
         if(Collision(*walls[i])){
             //If destination would collide with wall, push player back by 1 pixel in a direction from that wall to the player
-            float magnitude = Distance(*walls[i]);
-
             float xdif = GetPosition().x - walls[i]->GetPosition().x;
             float ydif = GetPosition().y - walls[i]->GetPosition().y;
 

@@ -12,7 +12,6 @@ bool Zombie::hit(int damage) {
     m_Health -= damage;
     if(m_Health <= 0){
         m_Alive = false;
-//        m_Sprite.setTexture(TextureHolder::GetTexture("../Resources/graphics/blood.png"));
         Entity::SetSprite("../Resources/graphics/blood.png");
     }
 
@@ -31,7 +30,6 @@ Zombie::Zombie(int x, int y) : Entity(){
     switch (r % 3){
         case 0:
             //Bloater
-//            m_Sprite = Sprite(TextureHolder::GetTexture("../Resources/graphics/bloater.png"));
             Entity::SetSprite("../Resources/graphics/bloater.png");
             m_Speed = BLOATER_SPEED;
             m_Health = BLOATER_HEALTH;
@@ -40,7 +38,6 @@ Zombie::Zombie(int x, int y) : Entity(){
             break;
         case 1:
             //Chaser
-//            m_Sprite = Sprite(TextureHolder::GetTexture("../Resources/graphics/chaser.png"));
             Entity::SetSprite("../Resources/graphics/chaser.png");
             m_Speed = CHASER_SPEED;
             m_Health = CHASER_HEALTH;
@@ -48,7 +45,6 @@ Zombie::Zombie(int x, int y) : Entity(){
             m_Type = 1;
             break;
         case 2:
-//            m_Sprite = Sprite(TextureHolder::GetTexture("../Resources/graphics/crawler.png"));
             Entity::SetSprite("../Resources/graphics/crawler.png");
             m_Speed = CRAWLER_SPEED;
             m_Health = CRAWLER_HEALTH;
@@ -63,8 +59,6 @@ Zombie::Zombie(int x, int y) : Entity(){
     m_Speed *= modifier;
 
     SetPosition(Vector2f(x, y), 0);
-//    m_Position.x = x;
-//    m_Position.y = y;
 }
 
 
@@ -116,10 +110,15 @@ void Zombie::update(float elapsedTime, Entity &player, std::vector<Tile*>& walls
         for (int i = 0; i < walls.size(); i++)
             if (Collision(*walls[i])) {
                 //If destination would collide with wall, push player back by 1 pixel in a direction from that wall to the player
-                float magnitude = Distance(*walls[i]);
-                x = origPosition.x + (origPosition.x - walls[i]->GetPosition().x) / magnitude;
-                y = origPosition.y + (origPosition.y - walls[i]->GetPosition().y) / magnitude;
-                break;
+                float xdif = GetPosition().x - walls[i]->GetPosition().x;
+                float ydif = GetPosition().y - walls[i]->GetPosition().y;
+
+                auto playerSize = GetSprite().getLocalBounds().width;
+
+                if(abs(xdif) > playerSize)
+                    x = origPosition.x + xdif/abs(xdif);
+                if(abs(ydif) > playerSize)
+                    y = origPosition.y + ydif/abs(ydif);
             }
 
         Entity::SetPosition(Vector2f(x, y), rotation);
@@ -129,13 +128,6 @@ void Zombie::update(float elapsedTime, Entity &player, std::vector<Tile*>& walls
 }
 
 void Zombie::draw(RenderWindow &window) {
-//    RectangleShape border(Vector2f(m_Sprite.getLocalBounds().width, m_Sprite.getLocalBounds().height));
-//    border.setFillColor(Color(255, 0, 0, 200));
-//    border.setOrigin(m_Sprite.getOrigin());
-//    border.setPosition(m_Position);
-//    border.setRotation(m_Sprite.getRotation());
-//    window.draw(border);
-
     Draw(window);
 }
 
