@@ -11,15 +11,17 @@ HudElement::HudElement(const std::string& fileName, int x, int y) {
     m_Sprite = AttachComponent<SpriteComponent>();
 
     m_Transform->SetPosition(Vector2f(x, y), 0);
-    m_Sprite->SetSprite(TextureHolder::GetTexture(fileName), false);
+    m_Sprite->SetSprite(TextureHolder::GetTexture(fileName));
     m_Sprite->setPosition(m_Transform->GetPosition());
 }
 
-HudElement::HudElement(const std::string& text, Font &font, float x, float y) {
+HudElement::HudElement(const std::string &text, float x, float y, Font &font, int fontsize, sf::Color fill) {
     m_Text = AttachComponent<TextComponent>();
     setFont(font);
     setText(text);
     setPosition(x, y);
+    setFillColor(fill);
+    setCharacterSize(fontsize);
 }
 
 void HudElement::setFont(const sf::Font& font) {

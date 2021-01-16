@@ -183,29 +183,17 @@ int main(int argc, const char * argv[]) {
     pausedText.setPosition(resolution.x/2, resolution.y/2);
 
     // Game Over
-    Text gameOverText1, gameOverText2;
-    gameOverText1.setFont(labFont);
-    gameOverText1.setCharacterSize(35);
-    gameOverText1.setFillColor(sf::Color::White);
-    gameOverText1.setString("Scientist still didn't learn after all this time.\n"
-                           "Another zombie outbreak. Wee need a sacrifice. We need you...\n"
-                           "Get in, grab the security passes\n"
-                           "and switch on the self destruct protocol at the mainframe.\n"
-                           "You'll have 30 seconds to get out.\n\n"
-                           "Come back. We need people that are able to come back.\n");
+    HudElement gameOverText1("Scientist still didn't learn after all this time.\n"
+                             "Another zombie outbreak. Wee need a sacrifice. We need you...\n"
+                             "Get in, grab the security passes\n"
+                             "and switch on the self destruct protocol at the mainframe.\n"
+                             "You'll have 30 seconds to get out.\n\n"
+                             "And do come back. We need people that are able to come back.\n",
+                             resolution.x / 2, resolution.y / 4 * 3,
+                             labFont, 35);
 
-    gameOverText2.setFont(zombieFont);
-    gameOverText2.setCharacterSize(135);
-    gameOverText2.setFillColor(sf::Color::White);
-    gameOverText2.setString("Press ENTER to play.");
-
-    FloatRect gameOverRect1 = gameOverText1.getLocalBounds();
-    gameOverText1.setOrigin(gameOverRect1.left + gameOverRect1.width / 2.0f, gameOverRect1.top + gameOverRect1.height / 2.0f);
-    gameOverText1.setPosition(resolution.x / 2, resolution.y / 4 * 3);
-
-    FloatRect gameOverRect2 = gameOverText2.getLocalBounds();
-    gameOverText2.setOrigin(gameOverRect2.left + gameOverRect2.width / 2.0f, gameOverRect2.top + gameOverRect2.height / 2.0f);
-    gameOverText2.setPosition(resolution.x / 2, resolution.y / 4 * 1);
+    HudElement gameOverText2("Press ENTER to play.", resolution.x / 2, resolution.y / 4 * 1,
+                             zombieFont, 135);
 
     // Levelling up
     Text levelUpText;
@@ -229,10 +217,7 @@ int main(int argc, const char * argv[]) {
     levelUpText.setPosition(resolution.x/2, resolution.y/2);
 
     // Ammo
-    HudElement ammoText("Ammo", zombieFont, 150, resolution.y - 200);
-    ammoText.setCharacterSize(55);
-    ammoText.setFillColor(Color::White);
-
+    HudElement ammoText("Ammo", 150, resolution.y - 200, zombieFont, 55);
 
     //Grenades
     Text grenadesText;
@@ -880,8 +865,8 @@ int main(int argc, const char * argv[]) {
         }
         else if(state == State::GAME_OVER){
             window.draw(gameOverSprite);
-            window.draw(gameOverText1);
-            window.draw(gameOverText2);
+            gameOverText1.Draw(window);
+            gameOverText2.Draw(window);
             window.draw(scoreText);
             window.draw(hiScoreText);
         }

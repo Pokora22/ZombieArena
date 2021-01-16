@@ -11,7 +11,7 @@
 class HudElement : public Object{
 public:
     HudElement(const std::string& fileName, int x, int y);
-    HudElement(const std::string& text, sf::Font &font, float x, float y);
+    HudElement(const std::string& text, float x, float y, sf::Font &font, int fontsize = 36, sf::Color fill = sf::Color::White);
     void setText(const std::string& text);
     void setFont(const sf::Font& font);
     void setCharacterSize(int size);

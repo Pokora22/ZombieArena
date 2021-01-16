@@ -11,6 +11,8 @@
 
 class TextComponent : public Component{
 public:
+    TextComponent();
+
     void setText(const std::string& text);
     void setFont(const sf::Font& font);
     void setCharacterSize(int size);
@@ -22,6 +24,8 @@ public:
     void SetScale(sf::Vector2f factors);
 
 private:
+    void Center();
+
     sf::Text m_Text;
 };
 
