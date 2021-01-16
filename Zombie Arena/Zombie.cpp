@@ -149,7 +149,7 @@ std::pair<int, int> Zombie::OnDeath(Entity &player, std::vector<Tile *> &walls, 
 
         //Destroy nearby walls
         for(auto wall : walls){
-            if(Distance(*wall) < effectDistance)
+            if(Distance(*wall) < effectDistance && !wall->isEdge())
                 wall->SetActive(false);
         }
 

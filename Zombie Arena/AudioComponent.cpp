@@ -20,7 +20,6 @@ void AudioComponent::AddAudio(std::string soundName, std::string fileName) {
 }
 
 void AudioComponent::PlayAudio(std::string soundName) {
-    std::cout << "(AudioComponent)Playing: " << soundName << std::endl;
     m_sounds.find(soundName)->second->play();
 }
 
