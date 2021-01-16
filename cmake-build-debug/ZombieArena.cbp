@@ -162,6 +162,12 @@
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp">
 			<Option target="ZombieArena"/>
 		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.cpp">
+			<Option target="ZombieArena"/>
+		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.h">
+			<Option target="ZombieArena"/>
+		</Unit>
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.cpp">
 			<Option target="ZombieArena"/>
 		</Unit>

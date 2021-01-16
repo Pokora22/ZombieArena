@@ -14,8 +14,8 @@ public:
     SpriteComponent();
     virtual void Draw(sf::RenderWindow &window, float timeDelta);
     virtual void Draw(sf::RenderWindow &window);
-    bool SetSprite(sf::Texture& texture, bool isSmooth, int frames = 1, int frameSpeed = 0);
-    bool SetSprite(sf::Texture& texture);
+    bool SetSprite(sf::Texture& texture, bool isSmooth, int frames, int frameSpeed);
+    bool SetSprite(sf::Texture& texture, bool centered = true);
     sf::Sprite& GetSprite();
     int GetFrameCount() const;
     bool IsAnimated();

@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/SpriteComponent.cpp.obj"
+  "CMakeFiles/ZombieArena.dir/Zombie_Arena/TextComponent.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/Tile.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/TransformComponent.cpp.obj"

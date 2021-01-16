@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/MazeGenerator.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Pickup.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/SpriteComponent.cpp.obj"
+  "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/TextComponent.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/Tile.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/TransformComponent.cpp.obj"

@@ -118,12 +118,13 @@ void SpriteComponent::Draw(sf::RenderWindow &window) {
     window.draw(m_sprite);
 }
 
-bool SpriteComponent::SetSprite(sf::Texture &texture) {
+bool SpriteComponent::SetSprite(sf::Texture &texture, bool centered) {
     // Create a sprite from the loaded texture.
     m_sprite.setTexture(texture);
 
     // Set the origin of the sprite.
-    m_sprite.setOrigin(m_sprite.getLocalBounds().width/2, m_sprite.getLocalBounds().height/2);
+    if(centered)
+        m_sprite.setOrigin(m_sprite.getLocalBounds().width/2, m_sprite.getLocalBounds().height/2);
 
     return true;
 }

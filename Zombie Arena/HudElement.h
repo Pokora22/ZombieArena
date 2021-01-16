@@ -6,6 +6,7 @@
 #define ZOMBIEARENA_HUDELEMENT_H
 
 #include "Entity.h"
+#include "TextComponent.h"
 
 class HudElement : public Object{
 public:
@@ -24,7 +25,7 @@ public:
 private:
     std::shared_ptr<TransformComponent> m_Transform;
     std::shared_ptr<SpriteComponent> m_Sprite;
-    Text m_Text;
+    std::shared_ptr<TextComponent> m_Text;
 };
 
 
