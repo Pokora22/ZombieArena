@@ -136,3 +136,7 @@ void SpriteComponent::setPosition(sf::Vector2f position, float rotation) {
 void SpriteComponent::SetColor(sf::Color color) {
     m_sprite.setColor(color);
 }
+
+void SpriteComponent::setScale(sf::Vector2f factors) {
+    m_sprite.setScale(factors);
+}

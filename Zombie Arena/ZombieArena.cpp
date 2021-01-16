@@ -21,6 +21,7 @@
 #include "Key.h"
 #include "ExitTerminal.h"
 #include "Grenade.h"
+#include "HudElement.h"
 
 void updatePlayerDirectionalControls(Player &p);
 
@@ -124,7 +125,7 @@ int main(int argc, const char * argv[]) {
     //Prepare grenade
     Grenade grenade;
     int grenadesSpare = 1;
-/// GRENADE ONLY TEST
+
 
     //Tracks time of last shot
     Time lastShot;
@@ -163,11 +164,14 @@ int main(int argc, const char * argv[]) {
     ammoIconSprite.setPosition(20, resolution.y - 200);
 
     //Grenade
-    Sprite grenadeIconSprite;
-    Texture grenadeIconTexture = TextureHolder::GetTexture("../Resources/graphics/grenade.png");
-    grenadeIconSprite.setTexture(grenadeIconTexture);
-    grenadeIconSprite.setPosition(420, resolution.y - 200);
-    grenadeIconSprite.setScale(3, 3);
+//    Sprite grenadeIconSprite;
+//    Texture grenadeIconTexture = TextureHolder::GetTexture("../Resources/graphics/grenade.png");
+//    grenadeIconSprite.setTexture(grenadeIconTexture);
+//    grenadeIconSprite.setPosition(420, resolution.y - 200);
+//    grenadeIconSprite.setScale(3, 3);
+
+    HudElement grenadeIcon("../Resources/graphics/grenade.png", 420, resolution.y - 200);
+    grenadeIcon.SetScale(Vector2f(3, 3));
 
     //Prep game font
     Font zombieFont, labFont;
@@ -866,7 +870,8 @@ int main(int argc, const char * argv[]) {
             window.setView(hudView);
 
             window.draw(ammoIconSprite);
-            window.draw(grenadeIconSprite);
+//            window.draw(grenadeIconSprite);
+            grenadeIcon.Draw(window);
             window.draw(ammoText);
             window.draw(grenadesText);
             window.draw(scoreText);

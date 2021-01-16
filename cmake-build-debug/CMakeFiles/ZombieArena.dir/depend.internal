@@ -541,10 +541,12 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Grenade.cpp.obj
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
+ G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Object.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
+ G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1278,6 +1280,7 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ExitTerminal.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Flashlight.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Grenade.h
+ G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Key.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/MazeGenerator.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Object.h

@@ -22,6 +22,7 @@ public:
     void SetAnimated(bool isAnimated);
     void setPosition(sf::Vector2f position);
     void setPosition(sf::Vector2f position, float rotation);
+    void setScale(sf::Vector2f factors);
     void setOrigin(sf::Vector2f position);
     void setTexture(const sf::Texture &texture);
     void SetColor(sf::Color color);

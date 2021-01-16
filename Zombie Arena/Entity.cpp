@@ -110,3 +110,7 @@ float Entity::GetRotation() {
 bool Entity::isActive() {
     return m_active;
 }
+
+void Entity::SetScale(Vector2f factors) {
+    m_Sprite->setScale(factors);
+}

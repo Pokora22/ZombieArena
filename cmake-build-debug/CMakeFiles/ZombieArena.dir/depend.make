@@ -540,10 +540,12 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Grenade.cpp.obj: G:/Dokumenty/WIT/Cpp/SF
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Grenade.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/Component.h
+CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/Entity.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/HudElement.cpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/HudElement.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/Object.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/SpriteComponent.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/TextureHolder.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: ../Zombie\ Arena/TransformComponent.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1277,6 +1279,7 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/En
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/ExitTerminal.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Flashlight.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Grenade.h
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/HudElement.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Key.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/MazeGenerator.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Object.h

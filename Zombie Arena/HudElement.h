@@ -5,11 +5,11 @@
 #ifndef ZOMBIEARENA_HUDELEMENT_H
 #define ZOMBIEARENA_HUDELEMENT_H
 
+#include "Entity.h"
 
-#include "Object.h"
-
-class HudElement : public Object{
-
+class HudElement : public Entity{
+public:
+    HudElement(std::string fileName, int x, int y);
 };
 
 

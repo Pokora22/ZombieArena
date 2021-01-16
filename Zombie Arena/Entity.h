@@ -26,6 +26,8 @@ public:
 
     void SetSprite(const std::string filename);
 
+    void SetScale(Vector2f factors);
+
     void SetPosition(Vector2f position, float angle);
 
     void Update();
