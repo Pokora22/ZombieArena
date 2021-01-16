@@ -151,10 +151,10 @@ int main(int argc, const char * argv[]) {
     //Create hud icons
 //    Hud hud(resolution);
     //Ammo
-    HudElement ammoIcon("../Resources/graphics/ammo_icon.png", 20, resolution.y - 200);
+    HudElement ammoIcon("../Resources/graphics/ammo_icon.png", 120, resolution.y - 165);
 
     //Grenade
-    HudElement grenadeIcon("../Resources/graphics/grenade.png", 420, resolution.y - 200);
+    HudElement grenadeIcon("../Resources/graphics/grenade.png", 520, resolution.y - 165);
     grenadeIcon.SetScale(Vector2f(3, 3));
 
     //Prep game font
@@ -193,13 +193,13 @@ int main(int argc, const char * argv[]) {
                            );
 
     // Ammo
-    HudElement ammoText("Ammo", 150, resolution.y - 200, zombieFont, 55);
+    HudElement ammoText("Ammo", 250, resolution.y - 165, zombieFont, 55);
 
     //Grenades
-    HudElement grenadeCount("Grenades", 570, resolution.y - 200, zombieFont, 55);
+    HudElement grenadeCount("Grenades", 670, resolution.y - 165, zombieFont, 55);
 
     // Score
-    HudElement scoreText("Score", 20, 0, zombieFont, 55);
+    HudElement scoreText("Score", 120, 35, zombieFont, 55);
 
     //Load hi score from file
     std::ifstream inputFile("../Resources/gamedata/scores.txt");
@@ -209,14 +209,14 @@ int main(int argc, const char * argv[]) {
     }
 
     // Hi Score
-    HudElement hiScoreText("Hi-Score", resolution.x - 400, 0, zombieFont, 55);
+    HudElement hiScoreText("Hi-Score", resolution.x - 300, 35, zombieFont, 55);
 
     // Zombies remaining
-    HudElement keysCollectedText("Keys", resolution.x - 400, resolution.y - 200, zombieFont, 55);
+    HudElement keysCollectedText("Keys", resolution.x - 300, resolution.y - 165, zombieFont, 55);
 
     // Wave number
     int wave = 0;
-    HudElement timeLeftText("Time left", resolution.x * 0.66, resolution.y - 200, zombieFont, 55);
+    HudElement timeLeftText("Time left", resolution.x * 0.66, resolution.y - 165, zombieFont, 55);
 
     // Health bar
     RectangleShape healthBar;
