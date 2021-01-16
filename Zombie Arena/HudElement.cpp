@@ -11,7 +11,7 @@ HudElement::HudElement(const std::string& fileName, int x, int y) {
     m_Sprite = AttachComponent<SpriteComponent>();
 
     m_Transform->SetPosition(Vector2f(x, y), 0);
-    m_Sprite->SetSprite(TextureHolder::GetTexture(fileName));
+    m_Sprite->SetSprite(ResourceManager::GetTexture(fileName));
     m_Sprite->setPosition(m_Transform->GetPosition());
 }
 

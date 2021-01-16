@@ -12,7 +12,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include "player.hpp"
-#include "TextureHolder.h"
+#include "ResourceManager.h"
 #include "Zombie.h"
 #include "Bullet.h"
 #include "Pickup.h"
@@ -61,7 +61,7 @@ int main(int argc, const char * argv[]) {
 //    View mainView(sf::FloatRect(0, 0, 1280, 720));
 
     //Create texture holder singleton
-    TextureHolder textureHolder;
+    ResourceManager resourceManager;
 
     //Prepare game clock
     Clock clock;
@@ -94,7 +94,7 @@ int main(int argc, const char * argv[]) {
     VertexArray background;
 
     //Load texture for the background
-    Texture backgroundTexture = TextureHolder::GetTexture("../Resources/graphics/background_sheet.png");
+    Texture backgroundTexture = ResourceManager::GetTexture("../Resources/graphics/background_sheet.png");
 
     std::vector<Zombie*> zombies;
 

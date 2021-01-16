@@ -79,7 +79,7 @@ Sprite Entity::GetSprite() {
 }
 
 void Entity::SetSprite(const std::string filename) {
-    m_Sprite->SetSprite(TextureHolder::GetTexture(filename));
+    m_Sprite->SetSprite(ResourceManager::GetTexture(filename));
 
     Update();
 }

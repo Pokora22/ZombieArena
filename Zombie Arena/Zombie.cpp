@@ -3,7 +3,7 @@
 //
 
 #include "Zombie.h"
-#include "TextureHolder.h"
+#include "ResourceManager.h"
 #include <cstdlib>
 #include <ctime>
 #include <cmath>

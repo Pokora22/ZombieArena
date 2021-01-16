@@ -118,19 +118,19 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\Arena.cpp" -o CMakeFiles\ZombieArena.dir\Zombie_Arena\Arena.cpp.s
 
-CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj: CMakeFiles/ZombieArena.dir/flags.make
-CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj: CMakeFiles/ZombieArena.dir/includes_CXX.rsp
-CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj: ../Zombie\ Arena/TextureHolder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Dokumenty\WIT\C++\ZombieArena\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ZombieArena.dir\Zombie_Arena\TextureHolder.cpp.obj -c "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\TextureHolder.cpp"
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj: CMakeFiles/ZombieArena.dir/flags.make
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj: CMakeFiles/ZombieArena.dir/includes_CXX.rsp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj: ../Zombie\ Arena/ResourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Dokumenty\WIT\C++\ZombieArena\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ZombieArena.dir\Zombie_Arena\ResourceManager.cpp.obj -c "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\ResourceManager.cpp"
 
-CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\TextureHolder.cpp" > CMakeFiles\ZombieArena.dir\Zombie_Arena\TextureHolder.cpp.i
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\ResourceManager.cpp" > CMakeFiles\ZombieArena.dir\Zombie_Arena\ResourceManager.cpp.i
 
-CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\TextureHolder.cpp" -o CMakeFiles\ZombieArena.dir\Zombie_Arena\TextureHolder.cpp.s
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "G:\Dokumenty\WIT\C++\ZombieArena\Zombie Arena\ResourceManager.cpp" -o CMakeFiles\ZombieArena.dir\Zombie_Arena\ResourceManager.cpp.s
 
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj: CMakeFiles/ZombieArena.dir/flags.make
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj: CMakeFiles/ZombieArena.dir/includes_CXX.rsp
@@ -375,7 +375,7 @@ ZombieArena_OBJECTS = \
 "CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj" \
 "CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj" \
 "CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.obj" \
-"CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj" \
+"CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj" \
 "CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj" \
 "CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj" \
 "CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj" \
@@ -400,7 +400,7 @@ ZombieArena_EXTERNAL_OBJECTS =
 ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj
 ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj
 ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.obj
-ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj
+ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj
 ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj
 ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj
 ZombieArena.exe: CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj

@@ -493,6 +493,33 @@ Zombie_Arena/Pickup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.s
 .PHONY : Zombie_Arena/Pickup.cpp.s
 
+Zombie_Arena/ResourceManager.obj: Zombie_Arena/ResourceManager.cpp.obj
+
+.PHONY : Zombie_Arena/ResourceManager.obj
+
+# target to build an object file
+Zombie_Arena/ResourceManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj
+.PHONY : Zombie_Arena/ResourceManager.cpp.obj
+
+Zombie_Arena/ResourceManager.i: Zombie_Arena/ResourceManager.cpp.i
+
+.PHONY : Zombie_Arena/ResourceManager.i
+
+# target to preprocess a source file
+Zombie_Arena/ResourceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.i
+.PHONY : Zombie_Arena/ResourceManager.cpp.i
+
+Zombie_Arena/ResourceManager.s: Zombie_Arena/ResourceManager.cpp.s
+
+.PHONY : Zombie_Arena/ResourceManager.s
+
+# target to generate assembly for a file
+Zombie_Arena/ResourceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.s
+.PHONY : Zombie_Arena/ResourceManager.cpp.s
+
 Zombie_Arena/SpriteComponent.obj: Zombie_Arena/SpriteComponent.cpp.obj
 
 .PHONY : Zombie_Arena/SpriteComponent.obj
@@ -546,33 +573,6 @@ Zombie_Arena/TextComponent.s: Zombie_Arena/TextComponent.cpp.s
 Zombie_Arena/TextComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/TextComponent.cpp.s
 .PHONY : Zombie_Arena/TextComponent.cpp.s
-
-Zombie_Arena/TextureHolder.obj: Zombie_Arena/TextureHolder.cpp.obj
-
-.PHONY : Zombie_Arena/TextureHolder.obj
-
-# target to build an object file
-Zombie_Arena/TextureHolder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.obj
-.PHONY : Zombie_Arena/TextureHolder.cpp.obj
-
-Zombie_Arena/TextureHolder.i: Zombie_Arena/TextureHolder.cpp.i
-
-.PHONY : Zombie_Arena/TextureHolder.i
-
-# target to preprocess a source file
-Zombie_Arena/TextureHolder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.i
-.PHONY : Zombie_Arena/TextureHolder.cpp.i
-
-Zombie_Arena/TextureHolder.s: Zombie_Arena/TextureHolder.cpp.s
-
-.PHONY : Zombie_Arena/TextureHolder.s
-
-# target to generate assembly for a file
-Zombie_Arena/TextureHolder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/TextureHolder.cpp.s
-.PHONY : Zombie_Arena/TextureHolder.cpp.s
 
 Zombie_Arena/Tile.obj: Zombie_Arena/Tile.cpp.obj
 
@@ -757,15 +757,15 @@ help:
 	@echo ... Zombie_Arena/Pickup.obj
 	@echo ... Zombie_Arena/Pickup.i
 	@echo ... Zombie_Arena/Pickup.s
+	@echo ... Zombie_Arena/ResourceManager.obj
+	@echo ... Zombie_Arena/ResourceManager.i
+	@echo ... Zombie_Arena/ResourceManager.s
 	@echo ... Zombie_Arena/SpriteComponent.obj
 	@echo ... Zombie_Arena/SpriteComponent.i
 	@echo ... Zombie_Arena/SpriteComponent.s
 	@echo ... Zombie_Arena/TextComponent.obj
 	@echo ... Zombie_Arena/TextComponent.i
 	@echo ... Zombie_Arena/TextComponent.s
-	@echo ... Zombie_Arena/TextureHolder.obj
-	@echo ... Zombie_Arena/TextureHolder.i
-	@echo ... Zombie_Arena/TextureHolder.s
 	@echo ... Zombie_Arena/Tile.obj
 	@echo ... Zombie_Arena/Tile.i
 	@echo ... Zombie_Arena/Tile.s

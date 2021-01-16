@@ -7,7 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "TextureHolder.h"
+#include "ResourceManager.h"
 #include "Object.h"
 
 

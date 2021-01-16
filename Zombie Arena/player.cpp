@@ -5,7 +5,7 @@
 
 //#include "stdafx.h" // <- Visual Studio only
 #include "player.hpp"
-#include "TextureHolder.h"
+#include "ResourceManager.h"
 
 #include <iostream>
 

@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 set(SOURCE_FILES "Zombie Arena/")
 
 add_executable(ZombieArena ${SOURCE_FILES}/ZombieArena.cpp
-        ${SOURCE_FILES}/player.cpp  ${SOURCE_FILES}/Arena.cpp "Zombie Arena/TextureHolder.cpp"
-        "Zombie Arena/TextureHolder.h" "Zombie Arena/Zombie.cpp" "Zombie Arena/Zombie.h" "Zombie Arena/Bullet.cpp"
+        ${SOURCE_FILES}/player.cpp  ${SOURCE_FILES}/Arena.cpp "Zombie Arena/ResourceManager.cpp"
+        "Zombie Arena/ResourceManager.h" "Zombie Arena/Zombie.cpp" "Zombie Arena/Zombie.h" "Zombie Arena/Bullet.cpp"
         "Zombie Arena/Bullet.h" "Zombie Arena/Pickup.cpp" "Zombie Arena/Pickup.h" "Zombie Arena/Entity.h"
         "Zombie Arena/Entity.cpp" "Zombie Arena/Tile.cpp" "Zombie Arena/Tile.h" "Zombie Arena/MazeGenerator.cpp"
         "Zombie Arena/MazeGenerator.h" "Zombie Arena/Flashlight.cpp" "Zombie Arena/Flashlight.h" "Zombie Arena/Key.cpp"

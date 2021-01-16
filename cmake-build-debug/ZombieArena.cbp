@@ -162,6 +162,12 @@
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Pickup.h">
 			<Option target="ZombieArena"/>
 		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.cpp">
+			<Option target="ZombieArena"/>
+		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h">
+			<Option target="ZombieArena"/>
+		</Unit>
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.cpp">
 			<Option target="ZombieArena"/>
 		</Unit>
@@ -172,12 +178,6 @@
 			<Option target="ZombieArena"/>
 		</Unit>
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.h">
-			<Option target="ZombieArena"/>
-		</Unit>
-		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.cpp">
-			<Option target="ZombieArena"/>
-		</Unit>
-		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.h">
 			<Option target="ZombieArena"/>
 		</Unit>
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.cpp">

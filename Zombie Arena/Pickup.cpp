@@ -3,7 +3,7 @@
 //
 
 #include "Pickup.h"
-#include "TextureHolder.h"
+#include "ResourceManager.h"
 
 Pickup::Pickup(TYPE type, Vector2f position) : Entity()
 {
