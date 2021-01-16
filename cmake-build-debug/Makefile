@@ -169,6 +169,33 @@ Zombie_Arena/Arena.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.s
 .PHONY : Zombie_Arena/Arena.cpp.s
 
+Zombie_Arena/AudioComponent.obj: Zombie_Arena/AudioComponent.cpp.obj
+
+.PHONY : Zombie_Arena/AudioComponent.obj
+
+# target to build an object file
+Zombie_Arena/AudioComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj
+.PHONY : Zombie_Arena/AudioComponent.cpp.obj
+
+Zombie_Arena/AudioComponent.i: Zombie_Arena/AudioComponent.cpp.i
+
+.PHONY : Zombie_Arena/AudioComponent.i
+
+# target to preprocess a source file
+Zombie_Arena/AudioComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.i
+.PHONY : Zombie_Arena/AudioComponent.cpp.i
+
+Zombie_Arena/AudioComponent.s: Zombie_Arena/AudioComponent.cpp.s
+
+.PHONY : Zombie_Arena/AudioComponent.s
+
+# target to generate assembly for a file
+Zombie_Arena/AudioComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZombieArena.dir\build.make CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.s
+.PHONY : Zombie_Arena/AudioComponent.cpp.s
+
 Zombie_Arena/Bullet.obj: Zombie_Arena/Bullet.cpp.obj
 
 .PHONY : Zombie_Arena/Bullet.obj
@@ -640,6 +667,9 @@ help:
 	@echo ... Zombie_Arena/Arena.obj
 	@echo ... Zombie_Arena/Arena.i
 	@echo ... Zombie_Arena/Arena.s
+	@echo ... Zombie_Arena/AudioComponent.obj
+	@echo ... Zombie_Arena/AudioComponent.i
+	@echo ... Zombie_Arena/AudioComponent.s
 	@echo ... Zombie_Arena/Bullet.obj
 	@echo ... Zombie_Arena/Bullet.i
 	@echo ... Zombie_Arena/Bullet.s

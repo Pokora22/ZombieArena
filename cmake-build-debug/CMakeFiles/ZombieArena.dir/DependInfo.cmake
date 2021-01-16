@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Arena.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.obj"
+  "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/Component.cpp.obj"
   "G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.cpp" "G:/Dokumenty/WIT/C++/ZombieArena/cmake-build-debug/CMakeFiles/ZombieArena.dir/Zombie_Arena/Entity.cpp.obj"

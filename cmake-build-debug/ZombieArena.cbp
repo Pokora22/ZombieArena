@@ -90,6 +90,12 @@
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Arena.h">
 			<Option target="ZombieArena"/>
 		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.cpp">
+			<Option target="ZombieArena"/>
+		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h">
+			<Option target="ZombieArena"/>
+		</Unit>
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.cpp">
 			<Option target="ZombieArena"/>
 		</Unit>

@@ -52,20 +52,18 @@ SFML/Graphics.hpp
 Component.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
 
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Zombie.cpp
-Zombie.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Zombie.h
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/player.cpp
+player.hpp
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/player.hpp
 TextureHolder.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.h
-cstdlib
--
-ctime
--
-cmath
+iostream
 -
 
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Zombie.h
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/player.hpp
 SFML/Graphics.hpp
+-
+cmath
 -
 Entity.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
