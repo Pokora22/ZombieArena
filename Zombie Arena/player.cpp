@@ -11,6 +11,11 @@
 
 Player::Player() : Entity("../Resources/graphics/player.png")
 {
+//    "../Resources/sound/shoot.wav"
+    m_Audio = AttachComponent<AudioComponent>();
+//    Add audio clips
+    m_Audio->AddAudio("shoot", "../Resources/sound/shoot.wav");
+
     m_Speed = START_SPEED;
     m_Health = START_HEALTH;
     m_MaxHealth = START_HEALTH;
@@ -166,3 +171,8 @@ void Player::increaseHealthLevel(int amount)
 bool Player::isHurt() {
     return m_Health < m_MaxHealth;
 }
+
+void Player::shoot() {
+    m_Audio->PlayAudio("shoot");
+}
+

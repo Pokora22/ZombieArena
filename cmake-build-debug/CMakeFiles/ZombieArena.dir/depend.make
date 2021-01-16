@@ -78,6 +78,53 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Arena.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: ../Zombie\ Arena/AudioComponent.cpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: ../Zombie\ Arena/AudioComponent.h
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: ../Zombie\ Arena/Component.h
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Clock.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Err.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Export.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/FileInputStream.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/InputStream.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Lock.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Mutex.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Sleep.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/String.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/String.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Thread.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Thread.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Time.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Utf.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Utf.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector2.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector2.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector3.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector3.inl
+
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj: ../Zombie\ Arena/Bullet.cpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj: ../Zombie\ Arena/Bullet.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj: ../Zombie\ Arena/Component.h
@@ -1223,6 +1270,7 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj: G:/Dokumenty/WIT/Cpp/SFM
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/AudioComponent.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Bullet.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Component.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Entity.h
@@ -1332,6 +1380,7 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: G:/Dokumenty/WIT/Cp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/AudioComponent.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/Component.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/Entity.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/Object.h
@@ -1341,6 +1390,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/Tile.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/TransformComponent.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/player.cpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: ../Zombie\ Arena/player.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

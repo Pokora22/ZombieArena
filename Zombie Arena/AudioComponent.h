@@ -10,12 +10,14 @@
 #include <map>
 #include <memory>
 
-class AudioComponent {
+class AudioComponent : public Component {
+public:
     AudioComponent();
-    void AddAudio(std::string &soundName, std::string &fileName);
-    void PlayAudio(std::string &soundName);
-    void PauseAudio(std::string &soundName);
-    void StopAudio(std::string &soundName);
+
+    void AddAudio(std::string soundName, std::string fileName);
+    void PlayAudio(std::string soundName);
+    void PauseAudio(std::string soundName);
+    void StopAudio(std::string soundName);
 
 private:
     sf::SoundBuffer m_soundBuffer;

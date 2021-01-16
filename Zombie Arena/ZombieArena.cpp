@@ -461,7 +461,8 @@ int main(int argc, const char * argv[]) {
 
                     lastShot = gameTimeTotal;
                     bulletsInClip--;
-                    shoot.play();
+//                    shoot.play();
+                    player.shoot();
                 }
             }
 

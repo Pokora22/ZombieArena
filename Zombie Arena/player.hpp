@@ -10,6 +10,7 @@
 #include <cmath>       /* atan2 */
 #include "Entity.h"
 #include "Tile.h"
+#include "AudioComponent.h"
 
 
 using namespace sf;
@@ -46,7 +47,7 @@ private:
     // Speed in pixels per second
     float m_Speed;
 
-    Sprite m_flashlightSprite;
+    std::shared_ptr<AudioComponent> m_Audio;
 
 public:
 
@@ -98,6 +99,8 @@ public:
     void increaseHealthLevel(int amount);
 
     bool isHurt();
+
+    void shoot();
 };
 
 #endif /* player_hpp */
