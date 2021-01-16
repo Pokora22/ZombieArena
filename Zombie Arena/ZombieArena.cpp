@@ -22,6 +22,7 @@
 #include "ExitTerminal.h"
 #include "Grenade.h"
 #include "HudElement.h"
+#include "Hud.h"
 
 void updatePlayerDirectionalControls(Player &p);
 
@@ -157,7 +158,7 @@ int main(int argc, const char * argv[]) {
     View hudView(FloatRect(0, 0, resolution.x, resolution.y));
 
     //Create hud icons
-//    TODO: Move all to HUD class?
+//    Hud hud(resolution);
     //Ammo
     HudElement ammoIcon("../Resources/graphics/ammo_icon.png", 20, resolution.y - 200);
 
@@ -171,16 +172,9 @@ int main(int argc, const char * argv[]) {
     labFont.loadFromFile("../Resources/fonts/xirod.ttf");
 
     //Pause text
-    Text pausedText;
-    pausedText.setFont(labFont);
-    pausedText.setCharacterSize(155);
-    pausedText.setFillColor(Color::White);
-    pausedText.setString("Press ENTER \nto continue");
-
-    //Center pause text
-    FloatRect pauseRect = pausedText.getLocalBounds();
-    pausedText.setOrigin(pauseRect.left + pauseRect.width/2.0f, pauseRect.top + pauseRect.height/2.0f);
-    pausedText.setPosition(resolution.x/2, resolution.y/2);
+    HudElement pausedText("Press ENTER \nto continue",
+                          resolution.x/2, resolution.y/2,
+                          labFont, 155);
 
     // Game Over
     HudElement gameOverText1("Scientist still didn't learn after all this time.\n"
@@ -724,21 +718,27 @@ int main(int argc, const char * argv[]) {
                 std::stringstream ssAmmo, ssGrenades, ssScore, ssHiScore, ssTime, ssKeysCollected;
 
                 ssAmmo << bulletsInClip << "/" << bulletsSpare;
+//                hud.ChangeText("ammo", ssAmmo.str());
                 ammoText.setText(ssAmmo.str());
 
                 ssGrenades << grenadesSpare;
+//                hud.ChangeText("grenades", ssGrenades.str());
                 grenadeCount.setText(ssGrenades.str());
 
                 ssScore << "Score: " << score;
+//                hud.ChangeText("score", ssScore.str());
                 scoreText.setText(ssScore.str());
 
                 ssHiScore << "Hi Score: " <<  hiScore;
+//                hud.ChangeText("hiscore", ssHiScore.str());
                 hiScoreText.setText(ssHiScore.str());
 
                 ssTime << "Time left: " << (int)escapeTimer;
+//                hud.ChangeText("timeleft", ssTime.str());
                 timeLeftText.setText(ssTime.str());
 
                 ssKeysCollected << "Keys: " << keysCollected << "/" << keysNeeded;
+//                hud.ChangeText("keys", ssKeysCollected.str());
                 keysCollectedText.setText(ssKeysCollected.str());
 
                 framesSinceLastHUDUpdate = 0;
@@ -811,6 +811,8 @@ int main(int argc, const char * argv[]) {
 
             window.setView(hudView);
 
+//            hud.Draw(window);
+
             ammoIcon.Draw(window);
             grenadeIcon.Draw(window);
             ammoText.Draw(window);
@@ -827,7 +829,7 @@ int main(int argc, const char * argv[]) {
             levelUpText.Draw(window);
         }
         else if(state == State::PAUSED){
-            window.draw(pausedText);
+            pausedText.Draw(window);
         }
         else if(state == State::GAME_OVER){
             window.draw(gameOverSprite);

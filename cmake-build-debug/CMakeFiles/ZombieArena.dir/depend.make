@@ -1443,6 +1443,7 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/En
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/ExitTerminal.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Flashlight.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Grenade.h
+CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Hud.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/HudElement.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/Key.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj: ../Zombie\ Arena/MazeGenerator.h

@@ -10,11 +10,13 @@
 
 class Hud {
 public:
-    void AddElement(HudElement &element);
+    Hud(Vector2f resolution);
+    void AddElement(const std::string& name, std::shared_ptr<HudElement> &element);
     void Draw(RenderWindow &window);
-
+    void ChangeText(const std::string& element, const std::string& text);
 private:
-    std::vector<HudElement> m_Elements;
+    std::map<std::string, std::shared_ptr<HudElement>> m_Elements;
+
 };
 
 

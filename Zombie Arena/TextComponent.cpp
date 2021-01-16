@@ -41,4 +41,8 @@ void TextComponent::Center() {
     m_Text.setOrigin(bounds.left + bounds.width / 2.0f, bounds.top + bounds.height / 2.0f);
 }
 
+sf::String TextComponent::getText() {
+    return (m_Text.getString());
+}
+
 

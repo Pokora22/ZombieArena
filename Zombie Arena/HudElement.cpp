@@ -45,7 +45,6 @@ void HudElement::setPosition(float x, float y) {
 }
 
 void HudElement::Draw(RenderWindow &window) {
-    //TODO: Check if not null
     if(m_Sprite)
         m_Sprite->Draw(window);
     if(m_Text)
@@ -54,4 +53,8 @@ void HudElement::Draw(RenderWindow &window) {
 
 void HudElement::SetScale(Vector2f factors) {
     m_Sprite->setScale(factors);
+}
+
+std::string HudElement::GetText() {
+    return m_Text->getText();
 }

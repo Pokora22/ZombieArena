@@ -18,6 +18,8 @@ public:
     void setFillColor(sf::Color color);
     void setPosition(float x, float y);
 
+    std::string GetText();
+
     void Draw(RenderWindow &window);
 
     void SetScale(Vector2f factors);

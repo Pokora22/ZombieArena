@@ -19,6 +19,8 @@ public:
     void setFillColor(sf::Color color);
     void setPosition(float x, float y);
 
+    sf::String getText();
+
     void Draw(sf::RenderWindow &window);
 
     void SetScale(sf::Vector2f factors);
