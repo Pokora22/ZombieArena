@@ -157,19 +157,11 @@ int main(int argc, const char * argv[]) {
     View hudView(FloatRect(0, 0, resolution.x, resolution.y));
 
     //Create hud icons
+//    TODO: Move all to HUD class?
     //Ammo
-    Sprite ammoIconSprite;
-    Texture ammoIconTexture = TextureHolder::GetTexture("../Resources/graphics/ammo_icon.png");
-    ammoIconSprite.setTexture(ammoIconTexture);
-    ammoIconSprite.setPosition(20, resolution.y - 200);
+    HudElement ammoIcon("../Resources/graphics/ammo_icon.png", 20, resolution.y - 200);
 
     //Grenade
-//    Sprite grenadeIconSprite;
-//    Texture grenadeIconTexture = TextureHolder::GetTexture("../Resources/graphics/grenade.png");
-//    grenadeIconSprite.setTexture(grenadeIconTexture);
-//    grenadeIconSprite.setPosition(420, resolution.y - 200);
-//    grenadeIconSprite.setScale(3, 3);
-
     HudElement grenadeIcon("../Resources/graphics/grenade.png", 420, resolution.y - 200);
     grenadeIcon.SetScale(Vector2f(3, 3));
 
@@ -237,11 +229,10 @@ int main(int argc, const char * argv[]) {
     levelUpText.setPosition(resolution.x/2, resolution.y/2);
 
     // Ammo
-    Text ammoText;
-    ammoText.setFont(zombieFont);
+    HudElement ammoText("Ammo", zombieFont, 150, resolution.y - 200);
     ammoText.setCharacterSize(55);
     ammoText.setFillColor(Color::White);
-    ammoText.setPosition(150, resolution.y-200);
+
 
     //Grenades
     Text grenadesText;
@@ -782,7 +773,7 @@ int main(int argc, const char * argv[]) {
                 std::stringstream ssAmmo, ssGrenades, ssScore, ssHiScore, ssTime, ssKeysCollected;
 
                 ssAmmo << bulletsInClip << "/" << bulletsSpare;
-                ammoText.setString(ssAmmo.str());
+                ammoText.setText(ssAmmo.str());
 
                 ssGrenades << grenadesSpare;
                 grenadesText.setString(ssGrenades.str());
@@ -869,10 +860,9 @@ int main(int argc, const char * argv[]) {
 
             window.setView(hudView);
 
-            window.draw(ammoIconSprite);
-//            window.draw(grenadeIconSprite);
+            ammoIcon.Draw(window);
             grenadeIcon.Draw(window);
-            window.draw(ammoText);
+            ammoText.Draw(window);
             window.draw(grenadesText);
             window.draw(scoreText);
             window.draw(hiScoreText);

@@ -7,9 +7,24 @@
 
 #include "Entity.h"
 
-class HudElement : public Entity{
+class HudElement : public Object{
 public:
-    HudElement(std::string fileName, int x, int y);
+    HudElement(const std::string& fileName, int x, int y);
+    HudElement(const std::string& text, sf::Font &font, float x, float y);
+    void setText(const std::string& text);
+    void setFont(const sf::Font& font);
+    void setCharacterSize(int size);
+    void setFillColor(sf::Color color);
+    void setPosition(float x, float y);
+
+    void Draw(RenderWindow &window);
+
+    void SetScale(Vector2f factors);
+
+private:
+    std::shared_ptr<TransformComponent> m_Transform;
+    std::shared_ptr<SpriteComponent> m_Sprite;
+    Text m_Text;
 };
 
 
