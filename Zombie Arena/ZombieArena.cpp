@@ -196,42 +196,25 @@ int main(int argc, const char * argv[]) {
                              zombieFont, 135);
 
     // Levelling up
-    Text levelUpText;
-    levelUpText.setFont(labFont);
-    levelUpText.setCharacterSize(50);
-    levelUpText.setFillColor(Color::White);
-    levelUpText.setPosition(150, 250);
-    std::stringstream levelUpStream;
-    levelUpStream << "Prepare for the next lab: \n\n"
-                  "1- Increased rate of fire" <<
-                  "\n2- Buy a grenade" <<
-                  "\n3- Increased max health" <<
-                  "\n4- Increased run speed" <<
-                  "\n5- More pickups" <<
-                  "\n6- Extend time for escape";
-
-    levelUpText.setString(levelUpStream.str());
-
-    FloatRect levelUpRect = levelUpText.getLocalBounds();
-    levelUpText.setOrigin(levelUpRect.left+levelUpRect.width/2.0f, levelUpRect.top+levelUpRect.height/2.0f);
-    levelUpText.setPosition(resolution.x/2, resolution.y/2);
+    HudElement levelUpText("Prepare for the next lab: \n\n"
+                           "1- Increased rate of fire\n"
+                           "2- Buy a grenade\n"
+                           "3- Increased max health\n"
+                           "4- Increased run speed\n"
+                           "5- More pickups\n"
+                           "6- Extend time for escape",
+                           resolution.x / 2, resolution.y /2,
+                           labFont, 50
+                           );
 
     // Ammo
     HudElement ammoText("Ammo", 150, resolution.y - 200, zombieFont, 55);
 
     //Grenades
-    Text grenadesText;
-    grenadesText.setFont(zombieFont);
-    grenadesText.setCharacterSize(55);
-    grenadesText.setFillColor(Color::White);
-    grenadesText.setPosition(570, resolution.y-200);
+    HudElement grenadeCount("Grenades", 570, resolution.y - 200, zombieFont, 55);
 
     // Score
-    Text scoreText;
-    scoreText.setFont(zombieFont);
-    scoreText.setCharacterSize(55);
-    scoreText.setFillColor(Color::White);
-    scoreText.setPosition(20, 0);
+    HudElement scoreText("Score", 20, 0, zombieFont, 55);
 
     //Load hi score from file
     std::ifstream inputFile("../Resources/gamedata/scores.txt");
@@ -241,31 +224,14 @@ int main(int argc, const char * argv[]) {
     }
 
     // Hi Score
-    Text hiScoreText;
-    hiScoreText.setFont(zombieFont);
-    hiScoreText.setCharacterSize(55);
-    hiScoreText.setFillColor(Color::White);
-    hiScoreText.setPosition(resolution.x-400, 0);
-    std::stringstream s;
-    s << "Hi Score:" << hiScore;
-    hiScoreText.setString(s.str());
+    HudElement hiScoreText("Hi-Score", resolution.x - 400, 0, zombieFont, 55);
 
     // Zombies remaining
-    Text keysCollectedText;
-    keysCollectedText.setFont(zombieFont);
-    keysCollectedText.setCharacterSize(55);
-    keysCollectedText.setFillColor(Color::White);
-    keysCollectedText.setPosition(resolution.x - 400, resolution.y - 200);
-    keysCollectedText.setString("Keys: 0");
+    HudElement keysCollectedText("Keys", resolution.x - 400, resolution.y - 200, zombieFont, 55);
 
     // Wave number
     int wave = 0;
-    Text timeLeftText;
-    timeLeftText.setFont(zombieFont);
-    timeLeftText.setCharacterSize(55);
-    timeLeftText.setFillColor(Color::White);
-    timeLeftText.setPosition(resolution.x * 0.66, resolution.y - 200);
-    timeLeftText.setString("Time Left: 30");
+    HudElement timeLeftText("Time left", resolution.x * 0.66, resolution.y - 200, zombieFont, 55);
 
     // Health bar
     RectangleShape healthBar;
@@ -761,19 +727,19 @@ int main(int argc, const char * argv[]) {
                 ammoText.setText(ssAmmo.str());
 
                 ssGrenades << grenadesSpare;
-                grenadesText.setString(ssGrenades.str());
+                grenadeCount.setText(ssGrenades.str());
 
                 ssScore << "Score: " << score;
-                scoreText.setString(ssScore.str());
+                scoreText.setText(ssScore.str());
 
                 ssHiScore << "Hi Score: " <<  hiScore;
-                hiScoreText.setString(ssHiScore.str());
+                hiScoreText.setText(ssHiScore.str());
 
                 ssTime << "Time left: " << (int)escapeTimer;
-                timeLeftText.setString(ssTime.str());
+                timeLeftText.setText(ssTime.str());
 
                 ssKeysCollected << "Keys: " << keysCollected << "/" << keysNeeded;
-                keysCollectedText.setString(ssKeysCollected.str());
+                keysCollectedText.setText(ssKeysCollected.str());
 
                 framesSinceLastHUDUpdate = 0;
 
@@ -848,17 +814,17 @@ int main(int argc, const char * argv[]) {
             ammoIcon.Draw(window);
             grenadeIcon.Draw(window);
             ammoText.Draw(window);
-            window.draw(grenadesText);
-            window.draw(scoreText);
-            window.draw(hiScoreText);
+            grenadeCount.Draw(window);
+            scoreText.Draw(window);
+            hiScoreText.Draw(window);
             window.draw(healthBar);
             if(exitUnlocked)
-                window.draw(timeLeftText);
-            window.draw(keysCollectedText);
+                timeLeftText.Draw(window);
+            keysCollectedText.Draw(window);
         }
         else if(state == State::LEVELING_UP){
             window.draw(gameOverSprite);
-            window.draw(levelUpText);
+            levelUpText.Draw(window);
         }
         else if(state == State::PAUSED){
             window.draw(pausedText);
@@ -867,8 +833,8 @@ int main(int argc, const char * argv[]) {
             window.draw(gameOverSprite);
             gameOverText1.Draw(window);
             gameOverText2.Draw(window);
-            window.draw(scoreText);
-            window.draw(hiScoreText);
+            scoreText.Draw(window);
+            hiScoreText.Draw(window);
         }
 
 
