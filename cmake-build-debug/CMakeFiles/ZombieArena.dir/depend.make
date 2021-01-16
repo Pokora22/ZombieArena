@@ -740,8 +740,6 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj: G:/Dokumenty/WIT/
 CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj: G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-CMakeFiles/ZombieArena.dir/Zombie_Arena/Object.cpp.obj: ../Zombie\ Arena/Object.cpp
-
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj: ../Zombie\ Arena/Component.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj: ../Zombie\ Arena/Entity.h
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj: ../Zombie\ Arena/Object.h

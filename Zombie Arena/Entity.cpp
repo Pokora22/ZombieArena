@@ -36,6 +36,28 @@ bool Entity::Collision(Entity& entity)
 {
     sf::FloatRect ownBounds = m_Sprite->GetSprite().getGlobalBounds();
     sf::FloatRect colliderBounds = entity.GetSprite().getGlobalBounds();
+
+    bool collision = m_active && entity.isActive() && ownBounds.intersects(colliderBounds);
+    if(collision){
+        float x = GetPosition().x;
+        float y = GetPosition().y;
+
+        float ex = entity.GetPosition().x;
+        float ey = entity.GetPosition().y;
+
+//        std::cout << "(Entity.cpp::Collision)Position: " << GetPosition().x << " : " << GetPosition().y << std::endl;
+//
+//        std::cout << "(Entity.cpp::Collision)Ownbounds: (" << ownBounds.left << ", " << ownBounds.top <<
+//            ", " << ownBounds.left + ownBounds.width << ", "  << ownBounds.top + ownBounds.height << ")" << std::endl;
+
+//        std::cout << "(Entity.cpp::Collision)colliderBounds: (" << colliderBounds.left << ", " << colliderBounds.top <<
+//                  ", " << colliderBounds.left + colliderBounds.width << ", "  <<
+//                  colliderBounds.top + colliderBounds.height << ")" << std::endl;
+
+//        std::cout << "(Entity.cpp::Collision)Org pos: " << x << " : " << y << " -- "
+//                  << "Wall: " << ex << " : " << ey << std::endl;
+    }
+
     return m_active && entity.isActive() && ownBounds.intersects(colliderBounds);
 }
 
@@ -64,6 +86,7 @@ void Entity::SetSprite(const std::string filename) {
 
 void Entity::SetPosition(Vector2f position, float angle) {
     m_Transform->SetPosition(position, angle);
+    m_Sprite->setPosition(position);
 }
 
 void Entity::Update() {

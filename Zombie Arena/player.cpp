@@ -14,11 +14,17 @@ Player::Player() : Entity("../Resources/graphics/player.png")
     m_Speed = START_SPEED;
     m_Health = START_HEALTH;
     m_MaxHealth = START_HEALTH;
+
+    m_active = false;
+
+    SetPosition(Vector2f(-1000, -1000), 0);
 }
 
 void Player::spawn(int x, int y, Vector2f resolution) {
     // Place the player in the middle of the arena
     SetPosition(Vector2f(x, y), 0);
+
+    m_active = true;
 
     // Store the resolution for future use
     m_Resolution.x = resolution.x;
@@ -95,33 +101,38 @@ void Player::setMoveUp(bool up) {
 
 void Player::update(float elapsedTime, Vector2i mousePosition, std::vector<Tile *> &walls)
 {
-    Vector2f origPosition = m_Transform->GetPosition();
+    if(!m_active)
+        return;
 
-    Vector2f newPos = Vector2f(
-            origPosition.x + (m_Speed * m_RightPressed - m_Speed * m_LeftPressed) * elapsedTime,
-            origPosition.y + (m_Speed * m_DownPressed - m_Speed * m_UpPressed) * elapsedTime);
+    Vector2f origPosition = m_Transform->GetPosition();
+    float x = 100, y = 100;
+
     //Since true is 1 and false is 0 we can calculate displacement by subtracting opposite values multiplied by the booleans
+    x = origPosition.x + (m_Speed * m_RightPressed - m_Speed * m_LeftPressed) * elapsedTime;
+    y = origPosition.y + (m_Speed * m_DownPressed - m_Speed * m_UpPressed) * elapsedTime;
 
     // Calculate the angle the player is facing
     float rotation = (atan2(mousePosition.y - m_Resolution.y / 2,
                         mousePosition.x - m_Resolution.x / 2)
                   * 180) / 3.141;
 
-    Entity::SetPosition(newPos, rotation);
-
     for(int i = 0; i < walls.size(); i++)
-        //TODO: This is obviously not working well
         if(Collision(*walls[i])){
             //If destination would collide with wall, push player back by 1 pixel in a direction from that wall to the player
             float magnitude = Distance(*walls[i]);
 
-            Vector2f adjustedPos = Vector2f(
-                    (origPosition.x - walls[i]->GetPosition().x) / magnitude,
-                    (origPosition.y - walls[i]->GetPosition().y) / magnitude
-                    );
-            Entity::SetPosition(adjustedPos, rotation);
-            break;
+            float xdif = GetPosition().x - walls[i]->GetPosition().x;
+            float ydif = GetPosition().y - walls[i]->GetPosition().y;
+
+            auto playerSize = GetSprite().getLocalBounds().width;
+
+            if(abs(xdif) > playerSize)
+                x = origPosition.x + xdif/abs(xdif);
+            if(abs(ydif) > playerSize)
+                y = origPosition.y + ydif/abs(ydif);
         }
+
+    Entity::SetPosition(Vector2f(x, y), rotation);
 
     Update();
 }
