@@ -5,28 +5,26 @@
 #include <iostream>
 #include <memory>
 #include "AudioComponent.h"
+#include "ResourceManager.h"
 
 AudioComponent::AudioComponent() {
 
 }
 
-void AudioComponent::AddAudio(std::string soundName, std::string fileName) {
-    //TODO: Can this be smart? It's retained whole game so not necessary?
-    auto m_soundBuffer = new sf::SoundBuffer;
-    m_soundBuffer->loadFromFile(fileName);
+void AudioComponent::AddAudio(const std::string& soundName, const std::string& fileName) {
     std::shared_ptr<sf::Sound> sound(new sf::Sound);
-    sound->setBuffer(*m_soundBuffer);
+    sound->setBuffer(ResourceManager::GetSoundBuffer(fileName));
     m_sounds.insert(std::pair<std::string, std::shared_ptr<sf::Sound>> (soundName, sound));
 }
 
-void AudioComponent::PlayAudio(std::string soundName) {
+void AudioComponent::PlayAudio(const std::string& soundName) {
     m_sounds.find(soundName)->second->play();
 }
 
-void AudioComponent::PauseAudio(std::string soundName) {
+void AudioComponent::PauseAudio(const std::string& soundName) {
     m_sounds.find(soundName)->second->pause();
 }
 
-void AudioComponent::StopAudio(std::string soundName) {
+void AudioComponent::StopAudio(const std::string& soundName) {
     m_sounds.find(soundName)->second->stop();
 }

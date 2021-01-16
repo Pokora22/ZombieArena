@@ -82,6 +82,7 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
+ G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -100,6 +101,37 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/CircleShape.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/ConvexShape.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Font.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Glsl.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/RectangleShape.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/RenderTexture.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Shader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Shape.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Text.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/View.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Clock.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Err.hpp
@@ -125,6 +157,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/AudioComponent.cpp.obj
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector2.inl
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector3.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/System/Vector3.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Clipboard.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Context.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Cursor.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Event.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Sensor.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Touch.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/Window.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.h
@@ -134,6 +183,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -219,6 +271,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Entity.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -586,6 +641,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Hud.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -670,6 +728,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -855,6 +916,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -1033,6 +1097,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -1272,6 +1339,9 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Tile.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

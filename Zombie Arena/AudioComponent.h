@@ -14,10 +14,10 @@ class AudioComponent : public Component {
 public:
     AudioComponent();
 
-    void AddAudio(std::string soundName, std::string fileName);
-    void PlayAudio(std::string soundName);
-    void PauseAudio(std::string soundName);
-    void StopAudio(std::string soundName);
+    void AddAudio(const std::string& soundName, const std::string& fileName);
+    void PlayAudio(const std::string& soundName);
+    void PauseAudio(const std::string& soundName);
+    void StopAudio(const std::string& soundName);
 
 private:
     std::map<std::string, std::shared_ptr<sf::Sound>> m_sounds;

@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.cpp
+iostream
+-
+memory
+-
+AudioComponent.h
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
+ResourceManager.h
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
+
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
 Component.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
@@ -16,12 +26,6 @@ map
 memory
 -
 
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.cpp
-iostream
--
-Bullet.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.h
-
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Bullet.h
 SFML/Graphics.hpp
 -
@@ -29,12 +33,6 @@ Entity.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
-
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.cpp
-cmath
--
-Entity.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
 SFML/Graphics.hpp
@@ -74,19 +72,9 @@ G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
 AudioComponent.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
 
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Hud.cpp
-Hud.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Hud.h
-
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Hud.h
 HudElement.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.h
-
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.cpp
-HudElement.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.h
-utility
--
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.h
 Entity.h
@@ -103,12 +91,6 @@ Entity.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
 AudioComponent.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
-
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/MazeGenerator.cpp
-iostream
--
-MazeGenerator.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/MazeGenerator.h
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/MazeGenerator.h
 vector
@@ -146,16 +128,12 @@ G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Entity.h
 AudioComponent.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
 
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.cpp
-ResourceManager.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
-assert.h
--
-
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
 SFML/Graphics.hpp
 -
 map
+-
+SFML/Audio/SoundBuffer.hpp
 -
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
@@ -169,12 +147,6 @@ SFML/Graphics.hpp
 -
 Component.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
-
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.cpp
-random
--
-Tile.h
-G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
 Entity.h
