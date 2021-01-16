@@ -7,18 +7,21 @@
 
 Pickup::Pickup(TYPE type, Vector2f position) : Entity()
 {
+    m_Audio = AttachComponent<AudioComponent>();
+
     //store type of pickup (1 - health, 2 - ammo)
     m_Type = type;
 
     //Associate type with texture
     if(m_Type == 1){
         SetSprite("../Resources/graphics/health_pickup.png");
-
+        m_Audio->AddAudio("pick", "../Resources/sound/pickup.wav");
         //set worth
         m_Value = HEALTH_START_VALUE;
     }
     else{
         SetSprite("../Resources/graphics/ammo_pickup.png");
+        m_Audio->AddAudio("pick", "../Resources/sound/reload.wav");
 
         m_Value = AMMO_START_VALUE;
     }
@@ -75,6 +78,7 @@ bool Pickup::isSpawned()
 
 int Pickup::gotIt()
 {
+    m_Audio->PlayAudio("pick");
     m_Spawned = false;
     m_SecondsSinceDeSpawn = 0;
     return m_Value;

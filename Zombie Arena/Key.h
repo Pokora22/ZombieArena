@@ -6,10 +6,13 @@
 #define ZOMBIEARENA_KEY_H
 
 #include "Entity.h"
+#include "AudioComponent.h"
 
 class Key : public Entity {
 private:
     bool m_collected;
+
+    std::shared_ptr<AudioComponent> m_Audio;
 public:
     Key(int x, int y);
 

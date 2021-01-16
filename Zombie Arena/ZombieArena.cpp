@@ -127,15 +127,12 @@ int main(int argc, const char * argv[]) {
     Grenade grenade;
     int grenadesSpare = 1;
 
-
     //Tracks time of last shot
     Time lastShot;
 
     //Hide cursor in game and display crosshair
     window.setMouseCursorVisible(false);
-    Sprite crosshairSprite;
-    crosshairSprite.setTexture(TextureHolder::GetTexture("../Resources/graphics/crosshair.png"));
-    crosshairSprite.setOrigin(25, 25);
+    HudElement crosshair("../Resources/graphics/crosshair.png", 0, 0);
 
     //Prep flashlight shape
     Flashlight flashlight(window);
@@ -145,14 +142,8 @@ int main(int argc, const char * argv[]) {
     int hiScore = 0;
 
     //Prep menu screens
-    Sprite gameOverSprite;
-
-    Texture gameOverTexture = TextureHolder::GetTexture("../Resources/graphics/background.png");
-    gameOverSprite.setTexture(gameOverTexture);
-    gameOverSprite.setPosition(0, 0);
-
-    //Scale the bg image
-    gameOverSprite.setScale(resolution.x/1920, resolution.y/1080);
+    HudElement gameOver("../Resources/graphics/background.png", resolution.x/2, resolution.y/2);
+    gameOver.SetScale(Vector2f(resolution.x/1920, resolution.y/1080));
 
     //Create HUD view
     View hudView(FloatRect(0, 0, resolution.x, resolution.y));
@@ -236,79 +227,12 @@ int main(int argc, const char * argv[]) {
     int framesSinceLastHUDUpdate = 0;
 
     //HUD update frequency (in frames)
-    int fpsMeasurementFrameInterval = 1000;
+    int fpsMeasurementFrameInterval = 1;
 
     //Prep sound buffers
-    SoundBuffer hitBuffer;
-    hitBuffer.loadFromFile("../Resources/sound/hit.wav");
-    Sound hit;
-    hit.setBuffer(hitBuffer);
+    //TODO: Resource manager for audio similar to textures
 
-    // Prepare the splat sound
-    SoundBuffer splatBuffer;
-    splatBuffer.loadFromFile("../Resources/sound/splat.wav");
-    sf::Sound splat;
-    splat.setBuffer(splatBuffer);
-
-    //Prep pop sound
-    SoundBuffer popBuffer;
-    popBuffer.loadFromFile("../Resources/sound/pop.ogg");
-    Sound pop;
-    pop.setBuffer(popBuffer);
-
-    // Prepare the shoot sound
-    SoundBuffer shootBuffer;
-    shootBuffer.loadFromFile("../Resources/sound/shoot.wav");
-    Sound shoot;
-    shoot.setBuffer(shootBuffer);
-
-    // Prepare the reload sound
-    SoundBuffer reloadBuffer;
-    reloadBuffer.loadFromFile("../Resources/sound/reload.wav");
-    Sound reload;
-    reload.setBuffer(reloadBuffer);
-
-    // Prepare the failed sound
-    SoundBuffer reloadFailedBuffer;
-    reloadFailedBuffer.loadFromFile("../Resources/sound/reload_failed.wav");
-    Sound reloadFailed;
-    reloadFailed.setBuffer(reloadFailedBuffer);
-
-    // Prepare the powerup sound
-    SoundBuffer powerupBuffer;
-    powerupBuffer.loadFromFile("../Resources/sound/powerup.wav");
-    Sound powerup;
-    powerup.setBuffer(powerupBuffer);
-
-    // Prepare the pickup sound
-    SoundBuffer pickupBuffer;
-    pickupBuffer.loadFromFile("../Resources/sound/pickup.wav");
-    Sound pickup;
-    pickup.setBuffer(pickupBuffer);
-
-    //Prepare keycard sound
-    SoundBuffer keycardBuffer;
-    keycardBuffer.loadFromFile("../Resources/sound/keycard.ogg");
-    Sound keycardSound;
-    keycardSound.setBuffer(keycardBuffer);
-
-    //Prepare terminal sounds
-    SoundBuffer alarmBuffer;
-    alarmBuffer.loadFromFile("../Resources/sound/alarm.ogg");
-    Sound alarm;
-    alarm.setBuffer(alarmBuffer);
-
-    SoundBuffer keyboardClackBuffer;
-    keyboardClackBuffer.loadFromFile("../Resources/sound/keyboard.ogg");
-    Sound keyboardClack;
-    keyboardClack.setBuffer(keyboardClackBuffer);
-
-    //Prep explosion sound
-    SoundBuffer explosionBuffer;
-    explosionBuffer.loadFromFile("../Resources/sound/explosion.ogg");
-    Sound explosion;
-    explosion.setBuffer(explosionBuffer);
-
+    //TODO: Move music to its own place
     //Prepare music
     Music ambient, alarmed;
     ambient.openFromFile("../Resources/sound/ambient.ogg");
@@ -369,16 +293,19 @@ int main(int argc, const char * argv[]) {
                         if(bulletsSpare >= clipSize){
                             bulletsInClip = clipSize;
                             bulletsSpare -= clipSize;
-                            reload.play();
+                            player.playAudio("reload");
+//                            reload.play();
                         }
                         else if(bulletsSpare > 0){
                             bulletsInClip = bulletsSpare;
                             bulletsSpare = 0;
-                            reload.play();
+                            player.playAudio("reload");
+//                            reload.play();
                         }
                         else{
                             //Reload failed
-                            reloadFailed.play();
+                            player.playAudio("reload_failed");
+//                            reloadFailed.play();
                         }
                     }
                 }
@@ -401,8 +328,7 @@ int main(int argc, const char * argv[]) {
 
                     lastShot = gameTimeTotal;
                     bulletsInClip--;
-//                    shoot.play();
-                    player.shoot();
+                    player.playAudio("shoot");
                 }
             }
 
@@ -510,7 +436,7 @@ int main(int argc, const char * argv[]) {
                 }
 
                 //play upgrade sound
-                powerup.play();
+                player.playAudio("powerup");
 
                 // Reset the clock so there isn't a frame jump
                 clock.restart();
@@ -537,7 +463,7 @@ int main(int argc, const char * argv[]) {
                 {
                     //Play explosion and move to game over
                     alarmed.stop();
-                    explosion.play();
+                    player.playAudio("explosion");
                     state = State::GAME_OVER;
                 }
             }
@@ -576,11 +502,7 @@ int main(int argc, const char * argv[]) {
                     ambient.stop();
                     if(alarmed.getStatus() != 2)
                         alarmed.play();
-                    if (keyboardClack.getStatus() != 2)
-                        keyboardClack.play();
                 }
-                else if(alarm.getStatus() != 2)
-                    alarm.play();
             }
 
             if(exitUnlocked && entrance->Collision(player))
@@ -600,15 +522,11 @@ int main(int argc, const char * argv[]) {
                                 // Register the hit and see if it was a kill
                                 if (zombie->hit()) {
                                     // Not just a hit but a kill too
-                                    //Play sound and fx depending on zombie
                                     if(zombie->GetZombieType() == 0){
-                                        pop.play();
                                         std::pair<int, int> damageAndPoints = zombie->OnDeath(player, walls, zombies);
                                         player.hit(gameTimeTotal, damageAndPoints.first);
                                         score += damageAndPoints.second;
                                     }
-                                    else
-                                        splat.play();
 
                                     score += 10;
                                     if (score >= hiScore) {
@@ -623,9 +541,6 @@ int main(int argc, const char * argv[]) {
                     for(auto wall : walls)
                         if(bullet.Collision(*wall) && wall->isActive()) {
                             bullet.stop();
-                            //TODO: Move this to grenade
-//                            if(!(wall->isEdge()))
-//                                wall->SetActive(false);
                         }
 
                 }
@@ -636,18 +551,17 @@ int main(int argc, const char * argv[]) {
             for(auto zombie : zombies){
                 if(grenade.Collision(*zombie)) {
                     score += grenade.Explode(walls, zombies);
-                    pop.play();
+//                    pop.play();
                 }
             }
             for(auto wall : walls){
                 if(grenade.Collision(*wall)){
                     score += grenade.Explode(walls, zombies);
-                    pop.play();
                 }
             }
 
             //Update crosshair
-            crosshairSprite.setPosition(mouseWorldPosition.x, mouseWorldPosition.y);
+            crosshair.setPosition(mouseWorldPosition.x, mouseWorldPosition.y);
 
             //Update flashlight
             flashlight.Update(player.getCenter(), player.getRotation());
@@ -658,7 +572,7 @@ int main(int argc, const char * argv[]) {
                 if(zombie->isAlive() && zombie->Collision(player)) {
                     if (player.hit(gameTimeTotal, zombie->GetDamage())) {
                         //Get hit effect
-                        hit.play();
+                        player.playAudio("hit");
 
                         if(player.getHealth() <= 0) {
                             //Stop all music
@@ -676,17 +590,12 @@ int main(int argc, const char * argv[]) {
                 }
             }// End player touched
 
-//            //update walls ????
-//            for(auto w : walls){
-//                w->Update();
-//            }
 
             //Pickup collisions
             //Health
             for(auto hp : healthPickups){
                 if(hp->isSpawned() && player.Collision(*hp) && player.isHurt()){
                     player.increaseHealthLevel(hp->gotIt());
-                    pickup.play();
                 }
             }
 
@@ -695,7 +604,6 @@ int main(int argc, const char * argv[]) {
                 if(ammo->isSpawned() && player.Collision(*ammo)){
                     bulletsSpare += ammo->gotIt();
                     grenadesSpare++;
-                    reload.play();
                 }
             }
 
@@ -704,7 +612,6 @@ int main(int argc, const char * argv[]) {
                 if(!k->isCollected() && player.Collision(*k)){
                     k->Collect();
                     keysCollected++;
-                    keycardSound.play();
                 }
             }
 
@@ -807,7 +714,7 @@ int main(int argc, const char * argv[]) {
             window.draw(flashlight);
 
             //Draw crosshair
-            window.draw(crosshairSprite);
+            crosshair.Draw(window);
 
             window.setView(hudView);
 
@@ -825,14 +732,14 @@ int main(int argc, const char * argv[]) {
             keysCollectedText.Draw(window);
         }
         else if(state == State::LEVELING_UP){
-            window.draw(gameOverSprite);
+            gameOver.Draw(window);
             levelUpText.Draw(window);
         }
         else if(state == State::PAUSED){
             pausedText.Draw(window);
         }
         else if(state == State::GAME_OVER){
-            window.draw(gameOverSprite);
+            gameOver.Draw(window);
             gameOverText1.Draw(window);
             gameOverText2.Draw(window);
             scoreText.Draw(window);

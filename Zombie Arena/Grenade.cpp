@@ -78,10 +78,14 @@ int Grenade::Explode(std::vector<Tile *> &walls, std::vector<Zombie *> &zombies,
         }
     }
 
+    m_Audio->PlayAudio("explode");
+
     m_active = false;
     return points;
 }
 
 Grenade::Grenade() : Entity("../Resources/graphics/grenade.png"){
+    m_Audio = AttachComponent<AudioComponent>();
+    m_Audio->AddAudio("explode", "../Resources/sound/pop.ogg");
     m_active = false;
 }

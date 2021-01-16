@@ -11,11 +11,13 @@ void ExitTerminal::Update(float elapsedTime) {
 }
 
 bool ExitTerminal::ActivateExit(bool hasEnoughKeys) {
+    m_Audio->PlayAudio("keyboard");
     if(hasEnoughKeys){
         m_counting = true;
         SetSprite("../Resources/graphics/terminal_alarm.png");
         return true;
     } else{
+        m_Audio->PlayAudio("alarm");
         m_TimeSinceActivation = 0;
         SetSprite("../Resources/graphics/terminal_denied.png");
         return false;
@@ -23,6 +25,10 @@ bool ExitTerminal::ActivateExit(bool hasEnoughKeys) {
 }
 
 ExitTerminal::ExitTerminal(int x, int y) {
+    m_Audio = AttachComponent<AudioComponent>();
+    m_Audio->AddAudio("alarm", "../Resources/sound/alarm.ogg");
+    m_Audio->AddAudio("keyboard", "../Resources/sound/keyboard.ogg");
+
     SetPosition(Vector2f(x, y), 0);
     m_counting = false;
     m_TimeSinceActivation = 0;

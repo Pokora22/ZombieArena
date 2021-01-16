@@ -12,6 +12,7 @@ bool Zombie::hit(int damage) {
     m_Health -= damage;
     if(m_Health <= 0){
         m_Alive = false;
+        m_Audio->PlayAudio("splat");
         Entity::SetSprite("../Resources/graphics/blood.png");
     }
 
@@ -57,6 +58,10 @@ Zombie::Zombie(int x, int y) : Entity(){
     float modifier = (r % MAX_VARIANCE) + OFFSET;
     modifier /= 100;
     m_Speed *= modifier;
+
+    m_Audio = AttachComponent<AudioComponent>();
+    m_Audio->AddAudio("explode", "../Resources/sound/pop.ogg");
+    m_Audio->AddAudio("splat", "../Resources/sound/splat.wav");
 
     SetPosition(Vector2f(x, y), 0);
 }
@@ -137,6 +142,8 @@ std::pair<int, int> Zombie::OnDeath(Entity &player, std::vector<Tile *> &walls, 
     damageAndPoints.second = 0;
 
     if(m_Type == 0){
+        m_Audio->PlayAudio("explode");
+
         if(Distance(player) < effectDistance)
             damageAndPoints.first = 30;
 

@@ -100,7 +100,7 @@ public:
 
     bool isHurt();
 
-    void shoot();
+    void playAudio(const std::string &name);
 };
 
 #endif /* player_hpp */

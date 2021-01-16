@@ -15,6 +15,11 @@ Player::Player() : Entity("../Resources/graphics/player.png")
     m_Audio = AttachComponent<AudioComponent>();
 //    Add audio clips
     m_Audio->AddAudio("shoot", "../Resources/sound/shoot.wav");
+    m_Audio->AddAudio("hit", "../Resources/sound/hit.wav");
+    m_Audio->AddAudio("reload", "../Resources/sound/reload.wav");
+    m_Audio->AddAudio("reload_failed", "../Resources/sound/reload_failed.wav");
+    m_Audio->AddAudio("powerup", "../Resources/sound/powerup.wav");
+    m_Audio->AddAudio("explosion", "../Resources/sound/explosion.ogg");
 
     m_Speed = START_SPEED;
     m_Health = START_HEALTH;
@@ -172,7 +177,7 @@ bool Player::isHurt() {
     return m_Health < m_MaxHealth;
 }
 
-void Player::shoot() {
-    m_Audio->PlayAudio("shoot");
+void Player::playAudio(const std::string &name) {
+    m_Audio->PlayAudio(name);
 }
 

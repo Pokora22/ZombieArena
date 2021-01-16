@@ -7,6 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Entity.h"
+#include "AudioComponent.h"
 
 using namespace sf;
 
@@ -35,6 +36,7 @@ private:
     float m_SecondsToLive;
     float m_SecondsToWait;
 
+    std::shared_ptr<AudioComponent> m_Audio;
 
 public:
     enum TYPE{HEALTH = 1, AMMO = 2};

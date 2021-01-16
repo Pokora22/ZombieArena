@@ -9,6 +9,7 @@
 #include "Entity.h"
 #include "Zombie.h"
 #include "Tile.h"
+#include "AudioComponent.h"
 
 class Grenade : public Entity{
 private:
@@ -23,6 +24,8 @@ private:
     float m_MaxY;
 
     float m_armedTime;
+
+    std::shared_ptr<AudioComponent> m_Audio;
 
 public:
     Grenade();

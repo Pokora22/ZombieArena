@@ -10,6 +10,7 @@
 #include <SFML/Graphics.hpp>
 #include "Entity.h"
 #include "Tile.h"
+#include "AudioComponent.h"
 
 using namespace sf;
 
@@ -53,6 +54,7 @@ private:
     //Store how much damage it deals
     int m_Damage;
 
+    std::shared_ptr<AudioComponent> m_Audio;
     // Public prototypes go here
 public:
     Zombie();

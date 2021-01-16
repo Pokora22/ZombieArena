@@ -7,6 +7,7 @@
 
 
 #include "Tile.h"
+#include "AudioComponent.h"
 
 class ExitTerminal : public Entity{
 private:
@@ -14,6 +15,8 @@ private:
     float m_TimeSinceActivation;
     bool m_counting;
     bool m_denied;
+
+    std::shared_ptr<AudioComponent> m_Audio;
 
 public:
     ExitTerminal(int x, int y);

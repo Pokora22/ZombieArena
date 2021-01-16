@@ -41,7 +41,12 @@ void HudElement::setText(const std::string& text) {
 }
 
 void HudElement::setPosition(float x, float y) {
-    m_Text->setPosition(x, y);
+    if(m_Text)
+        m_Text->setPosition(x, y);
+    if(m_Transform)
+        m_Transform->SetPosition(Vector2f(x, y));
+    if(m_Sprite)
+        m_Sprite->setPosition(Vector2f(x, y));
 }
 
 void HudElement::Draw(RenderWindow &window) {

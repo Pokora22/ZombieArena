@@ -5,6 +5,9 @@
 #include "Key.h"
 
 Key::Key(int x, int y) : Entity(){
+    m_Audio = AttachComponent<AudioComponent>();
+    m_Audio->AddAudio("pick", "../Resources/sound/keycard.ogg");
+
     SetSprite("../Resources/graphics/keycard.png");
 
     SetPosition(Vector2f(x, y), 0);
@@ -15,6 +18,7 @@ Key::Key(int x, int y) : Entity(){
 }
 
 void Key::Collect() {
+    m_Audio->PlayAudio("pick");
     m_collected = true;
 }
 
