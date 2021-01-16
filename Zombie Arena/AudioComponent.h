@@ -21,7 +21,7 @@ public:
 
 private:
     sf::SoundBuffer m_soundBuffer;
-    std::map<std::string, sf::Sound> m_sounds;
+    std::map<std::string, std::shared_ptr<sf::Sound>> m_sounds;
 };
 
 

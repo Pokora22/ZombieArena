@@ -13,7 +13,7 @@ add_executable(ZombieArena ${SOURCE_FILES}/ZombieArena.cpp
         "Zombie Arena/Key.h" "Zombie Arena/ExitTerminal.cpp" "Zombie Arena/ExitTerminal.h" "Zombie Arena/Grenade.cpp"
         "Zombie Arena/Grenade.h" "Zombie Arena/HudElement.cpp" "Zombie Arena/HudElement.h"
         "Zombie Arena/SpriteComponent.cpp" "Zombie Arena/TransformComponent.cpp"
-        "Zombie Arena/Component.cpp" "Zombie Arena/AudioComponent.cpp" "Zombie Arena/AudioComponent.h" "Zombie Arena/TextComponent.cpp" "Zombie Arena/TextComponent.h")
+        "Zombie Arena/Component.cpp" "Zombie Arena/AudioComponent.cpp" "Zombie Arena/AudioComponent.h" "Zombie Arena/TextComponent.cpp" "Zombie Arena/TextComponent.h" "Zombie Arena/Hud.cpp" "Zombie Arena/Hud.h")
 
 # Detect and add SFML
 #set(SFML_DIR "G:/Dokumenty/WIT/Cpp/SFML-2.5.1/lib/cmake/SFML")

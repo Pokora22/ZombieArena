@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.cpp
+AudioComponent.h
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
+
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/AudioComponent.h
 Component.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Component.h
@@ -157,6 +161,14 @@ Grenade.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Grenade.h
 HudElement.h
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.h
+
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/player.cpp
+player.hpp
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/player.hpp
+TextureHolder.h
+G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextureHolder.h
+iostream
+-
 
 G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/player.hpp
 SFML/Graphics.hpp

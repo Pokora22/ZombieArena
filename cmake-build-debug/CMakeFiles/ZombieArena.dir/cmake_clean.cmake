@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/ExitTerminal.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/Flashlight.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/Grenade.cpp.obj"
+  "CMakeFiles/ZombieArena.dir/Zombie_Arena/Hud.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/Key.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj"

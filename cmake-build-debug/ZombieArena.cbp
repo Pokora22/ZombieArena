@@ -132,6 +132,12 @@
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Grenade.h">
 			<Option target="ZombieArena"/>
 		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Hud.cpp">
+			<Option target="ZombieArena"/>
+		</Unit>
+		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Hud.h">
+			<Option target="ZombieArena"/>
+		</Unit>
 		<Unit filename="G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/HudElement.cpp">
 			<Option target="ZombieArena"/>
 		</Unit>

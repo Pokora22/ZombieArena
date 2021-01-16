@@ -10,19 +10,19 @@ AudioComponent::AudioComponent() {
 
 void AudioComponent::AddAudio(std::string soundName, std::string fileName) {
     m_soundBuffer.loadFromFile(fileName);
-    std::unique_ptr<sf::Sound> sound(new sf::Sound);
+    std::shared_ptr<sf::Sound> sound(new sf::Sound);
     sound->setBuffer(m_soundBuffer);
-    m_sounds.insert(std::pair<std::string, sf::Sound&> (soundName, *sound));
+    m_sounds.insert(std::pair<std::string, std::shared_ptr<sf::Sound>> (soundName, sound));
 }
 
 void AudioComponent::PlayAudio(std::string soundName) {
-    m_sounds.find(soundName)->second.play();
+    m_sounds.find(soundName)->second->play();
 }
 
 void AudioComponent::PauseAudio(std::string soundName) {
-    m_sounds.find(soundName)->second.pause();
+    m_sounds.find(soundName)->second->pause();
 }
 
 void AudioComponent::StopAudio(std::string soundName) {
-    m_sounds.find(soundName)->second.stop();
+    m_sounds.find(soundName)->second->stop();
 }
