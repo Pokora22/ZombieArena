@@ -108,8 +108,8 @@ int main(int argc, const char * argv[]) {
     int keysNeeded = 2;
 
     //Prepare exit object
-    ExitTerminal* exit = nullptr;
-    Entity* entrance = nullptr;
+    std::auto_ptr<ExitTerminal> exit;
+    std::auto_ptr<Entity> entrance;
     bool exitUnlocked = false;
 
     //Prepare bullets
@@ -366,10 +366,6 @@ int main(int argc, const char * argv[]) {
                 ///********************
                 /// Prepare the level
                 ///********************
-                delete(entrance);
-                delete(exit);
-                entrance = nullptr;
-                exit = nullptr;
 
                 walls.clear();
                 floor.clear();
@@ -408,11 +404,11 @@ int main(int argc, const char * argv[]) {
                                 zombies.push_back(new Zombie(j * 64, i * 64));
                                 break;
                             case 5: //Player spawn
-                                entrance = new Entity("../Resources/graphics/entrance.png", j * 64, i * 64);
+                                entrance = std::auto_ptr<Entity>(new Entity("../Resources/graphics/entrance.png", j * 64, i * 64));
                                 player.spawn(j * 64, i * 64, resolution);
                                 break;
                             case 6: //Exit
-                                exit = new ExitTerminal(j * 64, i * 64);
+                                exit = std::auto_ptr<ExitTerminal>(new ExitTerminal(j * 64, i * 64));
                                 break;
                             case 7: //Key
                                 keys.push_back(new Key(j * 64, i * 64));
@@ -736,9 +732,6 @@ int main(int argc, const char * argv[]) {
         window.display();
     }
 
-
-    delete(entrance);
-    delete(exit);
     return 0;
 }
 
