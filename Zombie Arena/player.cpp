@@ -20,6 +20,9 @@ Player::Player() : Entity("../Resources/graphics/player.png")
     m_Audio->AddAudio("reload_failed", "../Resources/sound/reload_failed.wav");
     m_Audio->AddAudio("powerup", "../Resources/sound/powerup.wav");
     m_Audio->AddAudio("explosion", "../Resources/sound/explosion.ogg");
+    //Music attached to player cause lazy
+    m_Audio->AddMusic("music_ambient", "../Resources/sound/ambient.ogg");
+    m_Audio->AddMusic("music_alarmed", "../Resources/sound/alarmed.ogg");
 
     m_Speed = START_SPEED;
     m_Health = START_HEALTH;
@@ -177,7 +180,11 @@ bool Player::isHurt() {
     return m_Health < m_MaxHealth;
 }
 
+//Lazy implementation TODO: Where should this go?
 void Player::playAudio(const std::string &name) {
     m_Audio->PlayAudio(name);
 }
 
+void Player::stopAudio(const std::string &name){
+    m_Audio->StopAudio(name);
+}

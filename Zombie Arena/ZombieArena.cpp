@@ -226,16 +226,6 @@ int main(int argc, const char * argv[]) {
     //HUD update frequency (in frames)
     int fpsMeasurementFrameInterval = 1;
 
-    //Prep sound buffers
-    //TODO: Resource manager for audio similar to textures
-
-    //TODO: Move music to its own place
-    //Prepare music
-    Music ambient, alarmed;
-    ambient.openFromFile("../Resources/sound/ambient.ogg");
-    ambient.setLoop(true);
-    alarmed.openFromFile("../Resources/sound/alarmed.ogg");
-
     //Main game loop
     while(window.isOpen()){
         /*************************************
@@ -280,8 +270,8 @@ int main(int argc, const char * argv[]) {
                 //Game restart (for testing)
                 if(event.key.code == Keyboard::Backspace) {
                     state = State::GAME_OVER;
-                    alarmed.stop();
-                    ambient.stop();
+                    player.stopAudio("music_ambient");
+                    player.stopAudio("music_alarmed");
                 }
 
                 if(state == State::PLAYING){
@@ -343,7 +333,7 @@ int main(int argc, const char * argv[]) {
         //Handle level up screen
         if(state == State::LEVELING_UP){
             //Stop alarmed music from previous level
-            alarmed.stop();
+            player.stopAudio("music_alarmed");
 
             switch (event.key.code){
                 case Keyboard::Num1:
@@ -439,7 +429,7 @@ int main(int argc, const char * argv[]) {
                 clock.restart();
 
                 //Start playing main ambient music
-                ambient.play();
+                player.playAudio("music_ambient");
             }
         }
 
@@ -459,7 +449,7 @@ int main(int argc, const char * argv[]) {
                 if(escapeTimer <= 0)
                 {
                     //Play explosion and move to game over
-                    alarmed.stop();
+                    player.stopAudio("music_alarmed");
                     player.playAudio("explosion");
                     state = State::GAME_OVER;
                 }
@@ -496,9 +486,8 @@ int main(int argc, const char * argv[]) {
             if(exit->Collision(player)) {
                 exitUnlocked = exit->ActivateExit(keysCollected == keysNeeded);
                 if(exitUnlocked) {
-                    ambient.stop();
-                    if(alarmed.getStatus() != 2)
-                        alarmed.play();
+                    player.stopAudio("music_ambient");
+                    player.playAudio("music_alarmed");
                 }
             }
 
@@ -573,8 +562,8 @@ int main(int argc, const char * argv[]) {
 
                         if(player.getHealth() <= 0) {
                             //Stop all music
-                            alarmed.stop();
-                            ambient.stop();
+                            player.stopAudio("music_alarmed");
+                            player.stopAudio("music_ambient");
 
                             state = State::GAME_OVER;
 

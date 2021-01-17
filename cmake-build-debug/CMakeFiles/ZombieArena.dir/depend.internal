@@ -183,9 +183,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Bullet.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -271,9 +285,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Entity.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -641,9 +669,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Hud.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -728,9 +770,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/HudElement.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TextComponent.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -916,9 +972,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/MazeGenerator.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/SpriteComponent.hpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -1097,9 +1167,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Pickup.cpp.obj
 CMakeFiles/ZombieArena.dir/Zombie_Arena/ResourceManager.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/ResourceManager.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -1339,9 +1423,23 @@ CMakeFiles/ZombieArena.dir/Zombie_Arena/Tile.cpp.obj
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.cpp
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/Tile.h
  G:/Dokumenty/WIT/C++/ZombieArena/Zombie Arena/TransformComponent.h
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/Sound.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Config.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics.hpp
  G:/Dokumenty/WIT/Cpp/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

@@ -101,6 +101,8 @@ public:
     bool isHurt();
 
     void playAudio(const std::string &name);
+
+    void stopAudio(const std::string &name);
 };
 
 #endif /* player_hpp */
