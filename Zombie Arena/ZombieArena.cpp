@@ -108,8 +108,8 @@ int main(int argc, const char * argv[]) {
     int keysNeeded = 2;
 
     //Prepare exit object
-    std::auto_ptr<ExitTerminal> exit;
-    std::auto_ptr<Entity> entrance;
+    std::unique_ptr<ExitTerminal> exit;
+    std::unique_ptr<Entity> entrance;
     bool exitUnlocked = false;
 
     //Prepare bullets
