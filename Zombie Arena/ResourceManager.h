@@ -7,7 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <map>
-#include <SFML/Audio/SoundBuffer.hpp>
+#include <SFML/Audio.hpp>
 #include <memory>
 
 using namespace sf;
@@ -17,11 +17,13 @@ public:
     static std::unique_ptr<ResourceManager> &Get();
     static Texture& GetTexture(std::string const& filename);
     static SoundBuffer& GetSoundBuffer(const std::string &filename);
+    static Music& GetMusicTrack(const std::string &filename);
 
 private:
     //map of textures and corresponding filenames
     std::map<std::string, sf::Texture> m_Textures;
     std::map<std::string, sf::SoundBuffer> m_SoundBuffers;
+    std::map<std::string, sf::Music> m_MusicTracks;
 
     //Pointer to the singleton
     static std::unique_ptr<ResourceManager> m_s_Instance;

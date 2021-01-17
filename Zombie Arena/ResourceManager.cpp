@@ -55,3 +55,18 @@ unique_ptr<ResourceManager> & ResourceManager::Get() {
 
     return m_s_Instance;
 }
+
+Music &ResourceManager::GetMusicTrack(const string &filename) {
+    auto& map = m_s_Instance->m_MusicTracks;
+
+    auto kvp = map.find(filename);
+
+    if(kvp != map.end())
+        return kvp->second;
+    else{
+        auto &track = map[filename];
+
+        track.openFromFile(filename);
+        return track;
+    }
+}
