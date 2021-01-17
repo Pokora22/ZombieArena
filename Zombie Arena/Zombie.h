@@ -11,6 +11,7 @@
 #include "Entity.h"
 #include "Tile.h"
 #include "AudioComponent.h"
+#include "ZombieHorde.h"
 
 using namespace sf;
 
@@ -61,7 +62,7 @@ private:
 public:
     Zombie();
 
-    Zombie(int x, int y);
+    Zombie(int x, int y, ZombieHorde horde);
 
     // Handle when a bullet hits a zombie
     bool hit(int damage = 1);

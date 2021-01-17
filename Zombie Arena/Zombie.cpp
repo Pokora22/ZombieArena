@@ -3,10 +3,7 @@
 //
 
 #include "Zombie.h"
-#include "ResourceManager.h"
-#include "ZombieHorde.h"
 #include <cstdlib>
-#include <ctime>
 #include <cmath>
 
 bool Zombie::hit(int damage) {
@@ -27,39 +24,11 @@ bool Zombie::isAlive() {
 
 //TODO: Need default constructor with entity constructor as well?
 
-Zombie::Zombie(int x, int y) : Entity(){
-    ZombieHorde horde;
-    horde.loadConfig("../Resources/zombieConfig.json");
+Zombie::Zombie(int x, int y, ZombieHorde horde) : Entity(){
     int r = rand();
     Config& config = horde.getConfig();
     Stats& stats = config.zombieStats.find(r % 3)->second;
-//
-//    switch (r % 3){
-//        case 0:
-//            //Bloater
-//            Entity::SetSprite("../Resources/graphics/bloater.png");
-//            m_Speed = BLOATER_SPEED;
-//            m_Health = BLOATER_HEALTH;
-//            m_Damage = BLOATER_DAMAGE;
-//            m_Type = "bloater";
-//            break;
-//        case 1:
-//            //Chaser
-//            Entity::SetSprite("../Resources/graphics/chaser.png");
-//            m_Speed = CHASER_SPEED;
-//            m_Health = CHASER_HEALTH;
-//            m_Damage = CHASER_DAMAGE;
-//            m_Type = "chaser";
-//            break;
-//        case 2:
-//            Entity::SetSprite("../Resources/graphics/crawler.png");
-//            m_Speed = CRAWLER_SPEED;
-//            m_Health = CRAWLER_HEALTH;
-//            m_Damage = CRAWLER_DAMAGE;
-//            m_Type = "crawler";
-//            break;
-//    }
-//
+
     Entity::SetSprite(stats.spriteFile);
     m_Speed = stats.speed;
     m_Health = stats.health;
@@ -68,9 +37,10 @@ Zombie::Zombie(int x, int y) : Entity(){
 //
     //Randomize speed to prevent bunching
     float modifier = (r % config.speedVariance) + config.baseSpeed;
-//    float modifier = (r % MAX_VARIANCE) + OFFSET;
     modifier /= 100;
     m_Speed *= modifier;
+
+    std::cout << "Zombie speed: " << config.baseSpeed << std::endl;
 
     m_Audio = AttachComponent<AudioComponent>();
     m_Audio->AddAudio("explode", "../Resources/sound/pop.ogg");
@@ -141,6 +111,8 @@ void Zombie::update(float elapsedTime, Entity &player, std::vector<Tile*>& walls
 
         Entity::SetPosition(Vector2f(x, y), rotation);
     }
+
+//    std::cout << "Zombie pos: " << GetPosition().x << " : " << GetPosition().y << std::endl;
 
     Update();
 }

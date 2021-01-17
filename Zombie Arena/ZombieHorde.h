@@ -5,11 +5,11 @@
 #ifndef ZOMBIEARENA_ZOMBIEHORDE_H
 #define ZOMBIEARENA_ZOMBIEHORDE_H
 
-#include "Zombie.h"
 #include <assert.h>
 #include <fstream>
 #include <iomanip>
 #include "nlohmann/json.hpp"
+#include <iostream>
 
 struct Stats{
     Stats(std::string type, float speed, float health, float damage, std::string spriteFile){
@@ -33,6 +33,7 @@ struct Config{
 
 class ZombieHorde {
 public:
+    ZombieHorde(const std::string& filename);
     Config& getConfig();
     bool saveConfig(const std::string& filename);
     bool loadConfig(const std::string& filename);

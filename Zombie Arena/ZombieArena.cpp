@@ -30,9 +30,8 @@ void updatePlayerDirectionalControls(Player &p);
 using namespace sf;
 
 int main(int argc, const char * argv[]) {
-    //TODO: Load config file for zombies
-    //Can't figure this out...
-//    ZombieHorde zombieHorde;
+    //Load config file for zombies
+    ZombieHorde horde("../Resources/zombieConfig.json");
 
     //Possible game states
     enum class State {PAUSED, LEVELING_UP, GAME_OVER, PLAYING};
@@ -406,7 +405,7 @@ int main(int argc, const char * argv[]) {
                                 ammoPickups.push_back(new Pickup(Pickup::AMMO, Vector2f(j * 64, i * 64)));
                                 break;
                             case 4: //Enemy
-                                zombies.push_back(new Zombie(j * 64, i * 64));
+                                zombies.push_back(new Zombie(j * 64, i * 64, horde));
                                 break;
                             case 5: //Player spawn
                                 entrance = std::unique_ptr<Entity>(new Entity("../Resources/graphics/entrance.png", j * 64, i * 64));

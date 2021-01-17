@@ -35,6 +35,7 @@ bool ZombieHorde::saveConfig(const std::string& filename) {
 }
 
 bool ZombieHorde::loadConfig(const std::string& filename) {
+    std::cout << "Loading config" << std::endl;
     //Open file in
     std::ifstream fin(filename);
 
@@ -47,6 +48,7 @@ bool ZombieHorde::loadConfig(const std::string& filename) {
         fin >> jsonString;
 
         jsonString.at("speedVariance").get_to(m_config.speedVariance);
+        jsonString.at("speedBase").get_to(m_config.baseSpeed);
 
         // 3 is placeholder !
         for(int i = 0; i < jsonString.at("zombieStats").size(); i++){
@@ -67,4 +69,9 @@ bool ZombieHorde::loadConfig(const std::string& filename) {
 
 Config& ZombieHorde::getConfig() {
     return m_config;
+}
+
+ZombieHorde::ZombieHorde(const std::string& filename) {
+    if(m_zombieStats.empty())
+        loadConfig(filename);
 }
