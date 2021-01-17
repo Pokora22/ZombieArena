@@ -60,9 +60,6 @@ int main(int argc, const char * argv[]) {
 //    //Create main view
 //    View mainView(sf::FloatRect(0, 0, 1280, 720));
 
-    //Create texture holder singleton
-    ResourceManager resourceManager;
-
     //Prepare game clock
     Clock clock;
 
@@ -94,7 +91,7 @@ int main(int argc, const char * argv[]) {
     VertexArray background;
 
     //Load texture for the background
-    Texture backgroundTexture = ResourceManager::GetTexture("../Resources/graphics/background_sheet.png");
+    Texture backgroundTexture = ResourceManager::Get()->GetTexture("../Resources/graphics/background_sheet.png");
 
     std::vector<Zombie*> zombies;
 
