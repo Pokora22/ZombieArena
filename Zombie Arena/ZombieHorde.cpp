@@ -4,52 +4,67 @@
 
 #include "ZombieHorde.h"
 
-Zombie* createHorde(int numZombies, IntRect arena) {
-    Zombie *zombies = new Zombie[numZombies];
+bool ZombieHorde::saveConfig(const std::string& filename) {
+    nlohmann::json statsString;
+    for(auto info : m_zombieStats){
+        statsString[info.first] = {
+                {"type", info.second.type},
+                {"speed", info.second.speed},
+                {"health", info.second.health},
+                {"damage", info.second.damage},
+                {"sprite", info.second.spriteFile}
+        };
+    }
 
-    int maxY = arena.height - 20;
-    int minY = arena.top + 20;
-    int maxX = arena.width - 20;
-    int minX = arena.left + 20;
+    nlohmann::json configString = {
+            {"speedBase", m_config.baseSpeed},
+            {"speedVariance", m_config.speedVariance},
+            {"zombieStats", statsString}
+    };
 
-    for (int i = 0; i < numZombies; i++) {
+    //Open file out
+    std::ofstream fout(filename);
+    if (!fout.is_open()) {
+        std::cout << "failed to open " << filename << '\n';
+    } else {
+        // write
+        fout << std::setw(4) << statsString << std::endl;
+    }
+    fout.close();
+    return true;
+}
 
-        // Which side should the zombie spawn
-        int side = (rand() % 4);
-        float x = 0, y = 0;
+bool ZombieHorde::loadConfig(const std::string& filename) {
+    //Open file in
+    std::ifstream fin(filename);
 
-        switch (side) {
-            case 0:
-                // left
-                x = minX;
-                y = (rand() % maxY) + minY;
-                break;
+    if (!fin.is_open()) {
+        std::cout << "failed to open " << filename << '\n';
+        return false;
+    } else {
+        // read
+        nlohmann::json jsonString;
+        fin >> jsonString;
 
-            case 1:
-                // right
-                x = maxX;
-                y = (rand() % maxY) + minY;
-                break;
+        jsonString.at("speedVariance").get_to(m_config.speedVariance);
 
-            case 2:
-                // top
-                x = (rand() % maxX) + minX;
-                y = minY;
-                break;
-
-            case 3:
-                // bottom
-                x = (rand() % maxX) + minX;
-                y = maxY;
-                break;
+        // 3 is placeholder !
+        for(int i = 0; i < jsonString.at("zombieStats").size(); i++){
+            auto info = jsonString.at("zombieStats")[i];
+            m_zombieStats.emplace(i, Stats(info["type"],
+                                           info["speed"],
+                                           info["health"],
+                                           info["damage"],
+                                           info["sprite"]));
         }
 
-        // Bloater, crawler or runner
-        int type = (rand() % 3);
-
-        // Spawn the new zombie into the array
-        zombies[i].spawn(x, y, type, i);
-
+        m_config.zombieStats = m_zombieStats;
     }
-    return zombies;
+
+    fin.close();
+    return true;
+}
+
+Config& ZombieHorde::getConfig() {
+    return m_config;
 }

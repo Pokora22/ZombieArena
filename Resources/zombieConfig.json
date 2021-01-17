@@ -1,0 +1,27 @@
+{
+  "speedBase" : 100,
+  "speedVariance": 30,
+  "zombieStats": [
+    {
+      "type":"bloater",
+      "speed": 40,
+      "health": 5,
+      "damage": 20,
+      "sprite": "../Resources/graphics/bloater.png"
+    },
+    {
+      "type":"chaser",
+      "speed": 80,
+      "health": 1,
+      "damage": 15,
+      "sprite": "../Resources/graphics/chaser.png"
+    },
+    {
+      "type":"crawler",
+      "speed": 20,
+      "health": 3,
+      "damage": 10,
+      "sprite": "../Resources/graphics/crawler.png"
+    }
+  ]
+}

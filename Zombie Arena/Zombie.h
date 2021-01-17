@@ -14,6 +14,7 @@
 
 using namespace sf;
 
+
 class Zombie : public Entity
 {
 private:
@@ -49,12 +50,13 @@ private:
     bool m_Alerted = false;
 
     //Store type (how to store enum?)
-    int m_Type;
+    std::string m_Type;
 
     //Store how much damage it deals
     int m_Damage;
 
     std::shared_ptr<AudioComponent> m_Audio;
+
     // Public prototypes go here
 public:
     Zombie();
@@ -85,7 +87,7 @@ public:
 
     std::pair<int, int> OnDeath(Entity& player, std::vector<Tile*>& walls, std::vector<Zombie*>& zombies, int effectDistance = 100);
 
-    int GetZombieType();
+    const std::string& GetZombieType();
 };
 
 

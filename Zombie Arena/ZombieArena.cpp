@@ -23,12 +23,17 @@
 #include "Grenade.h"
 #include "HudElement.h"
 #include "Hud.h"
+//#include "ZombieHorde.h"
 
 void updatePlayerDirectionalControls(Player &p);
 
 using namespace sf;
 
 int main(int argc, const char * argv[]) {
+    //TODO: Load config file for zombies
+    //Can't figure this out...
+//    ZombieHorde zombieHorde;
+
     //Possible game states
     enum class State {PAUSED, LEVELING_UP, GAME_OVER, PLAYING};
 
@@ -504,7 +509,7 @@ int main(int argc, const char * argv[]) {
                                 // Register the hit and see if it was a kill
                                 if (zombie->hit()) {
                                     // Not just a hit but a kill too
-                                    if(zombie->GetZombieType() == 0){
+                                    if(zombie->GetZombieType() == "bloater"){
                                         std::pair<int, int> damageAndPoints = zombie->OnDeath(player, walls, zombies);
                                         player.hit(gameTimeTotal, damageAndPoints.first);
                                         score += damageAndPoints.second;

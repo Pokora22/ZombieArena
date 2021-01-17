@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/TransformComponent.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/Zombie.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieArena.cpp.obj"
+  "CMakeFiles/ZombieArena.dir/Zombie_Arena/ZombieHorde.cpp.obj"
   "CMakeFiles/ZombieArena.dir/Zombie_Arena/player.cpp.obj"
   "ZombieArena.exe"
   "ZombieArena.exe.manifest"

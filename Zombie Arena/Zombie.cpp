@@ -4,6 +4,7 @@
 
 #include "Zombie.h"
 #include "ResourceManager.h"
+#include "ZombieHorde.h"
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
@@ -27,35 +28,47 @@ bool Zombie::isAlive() {
 //TODO: Need default constructor with entity constructor as well?
 
 Zombie::Zombie(int x, int y) : Entity(){
+    ZombieHorde horde;
+    horde.loadConfig("../Resources/zombieConfig.json");
     int r = rand();
-    switch (r % 3){
-        case 0:
-            //Bloater
-            Entity::SetSprite("../Resources/graphics/bloater.png");
-            m_Speed = BLOATER_SPEED;
-            m_Health = BLOATER_HEALTH;
-            m_Damage = BLOATER_DAMAGE;
-            m_Type = 0;
-            break;
-        case 1:
-            //Chaser
-            Entity::SetSprite("../Resources/graphics/chaser.png");
-            m_Speed = CHASER_SPEED;
-            m_Health = CHASER_HEALTH;
-            m_Damage = CHASER_DAMAGE;
-            m_Type = 1;
-            break;
-        case 2:
-            Entity::SetSprite("../Resources/graphics/crawler.png");
-            m_Speed = CRAWLER_SPEED;
-            m_Health = CRAWLER_HEALTH;
-            m_Damage = CRAWLER_DAMAGE;
-            m_Type = 2;
-            break;
-    }
-
+    Config& config = horde.getConfig();
+    Stats& stats = config.zombieStats.find(r % 3)->second;
+//
+//    switch (r % 3){
+//        case 0:
+//            //Bloater
+//            Entity::SetSprite("../Resources/graphics/bloater.png");
+//            m_Speed = BLOATER_SPEED;
+//            m_Health = BLOATER_HEALTH;
+//            m_Damage = BLOATER_DAMAGE;
+//            m_Type = "bloater";
+//            break;
+//        case 1:
+//            //Chaser
+//            Entity::SetSprite("../Resources/graphics/chaser.png");
+//            m_Speed = CHASER_SPEED;
+//            m_Health = CHASER_HEALTH;
+//            m_Damage = CHASER_DAMAGE;
+//            m_Type = "chaser";
+//            break;
+//        case 2:
+//            Entity::SetSprite("../Resources/graphics/crawler.png");
+//            m_Speed = CRAWLER_SPEED;
+//            m_Health = CRAWLER_HEALTH;
+//            m_Damage = CRAWLER_DAMAGE;
+//            m_Type = "crawler";
+//            break;
+//    }
+//
+    Entity::SetSprite(stats.spriteFile);
+    m_Speed = stats.speed;
+    m_Health = stats.health;
+    m_Damage = stats.damage;
+    m_Type = stats.type;
+//
     //Randomize speed to prevent bunching
-    float modifier = (r % MAX_VARIANCE) + OFFSET;
+    float modifier = (r % config.speedVariance) + config.baseSpeed;
+//    float modifier = (r % MAX_VARIANCE) + OFFSET;
     modifier /= 100;
     m_Speed *= modifier;
 
@@ -141,7 +154,7 @@ std::pair<int, int> Zombie::OnDeath(Entity &player, std::vector<Tile *> &walls, 
     damageAndPoints.first = 0;
     damageAndPoints.second = 0;
 
-    if(m_Type == 0){
+    if(m_Type == "bloater"){
         m_Audio->PlayAudio("explode");
 
         if(Distance(player) < effectDistance)
@@ -169,6 +182,11 @@ int Zombie::GetDamage() {
     return m_Damage;
 }
 
-int Zombie::GetZombieType() {
+
+void Zombie::spawn(float startX, float startY, int type, int seed) {
+
+}
+
+const std::string& Zombie::GetZombieType() {
     return m_Type;
 }
