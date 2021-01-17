@@ -404,11 +404,11 @@ int main(int argc, const char * argv[]) {
                                 zombies.push_back(new Zombie(j * 64, i * 64));
                                 break;
                             case 5: //Player spawn
-                                entrance = std::auto_ptr<Entity>(new Entity("../Resources/graphics/entrance.png", j * 64, i * 64));
+                                entrance = std::unique_ptr<Entity>(new Entity("../Resources/graphics/entrance.png", j * 64, i * 64));
                                 player.spawn(j * 64, i * 64, resolution);
                                 break;
                             case 6: //Exit
-                                exit = std::auto_ptr<ExitTerminal>(new ExitTerminal(j * 64, i * 64));
+                                exit = std::unique_ptr<ExitTerminal>(new ExitTerminal(j * 64, i * 64));
                                 break;
                             case 7: //Key
                                 keys.push_back(new Key(j * 64, i * 64));

@@ -55,7 +55,6 @@ void AudioComponent::StopAudio(const std::string& soundName) {
         if(it != m_musicTracks.end()) {
             Music &track = it->second;
             track.stop();
-            std::cout << "Stopping music: " << soundName << std::endl;
         }
     }
 }
