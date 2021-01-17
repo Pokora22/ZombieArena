@@ -13,7 +13,7 @@ AudioComponent::AudioComponent() {
 
 void AudioComponent::AddAudio(const std::string& soundName, const std::string& fileName) {
     std::shared_ptr<sf::Sound> sound(new sf::Sound);
-    sound->setBuffer(ResourceManager::GetSoundBuffer(fileName));
+    sound->setBuffer(ResourceManager::Get()->GetSoundBuffer(fileName));
     m_sounds.insert(std::pair<std::string, std::shared_ptr<sf::Sound>> (soundName, sound));
 }
 

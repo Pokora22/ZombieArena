@@ -5,15 +5,16 @@
 #include "ResourceManager.h"
 #include <assert.h>
 
+#include <memory>
+
 using namespace sf;
 using namespace std;
 
-ResourceManager* ResourceManager::m_s_Instance = nullptr;
-
 ResourceManager::ResourceManager() {
-    assert(m_s_Instance == nullptr);
-    m_s_Instance = this;
+//    assert(m_s_Instance == nullptr);
 }
+
+std::shared_ptr<ResourceManager> ResourceManager::m_s_Instance = nullptr;
 
 Texture& ResourceManager::GetTexture(std::string const &filename) {
     //Get reference of the texture map from this instance
@@ -48,4 +49,12 @@ SoundBuffer &ResourceManager::GetSoundBuffer(const string &filename) {
         sbuffer.loadFromFile(filename);
         return sbuffer;
     }
+}
+
+shared_ptr<ResourceManager> & ResourceManager::Get() {
+    if(m_s_Instance == nullptr){
+        m_s_Instance = std::make_shared<ResourceManager>();
+    }
+
+    return m_s_Instance;
 }
