@@ -14,8 +14,7 @@ using namespace sf;
 
 class ResourceManager {
 public:
-    ResourceManager();
-    static std::shared_ptr<ResourceManager> &Get();
+    static std::unique_ptr<ResourceManager> &Get();
     static Texture& GetTexture(std::string const& filename);
     static SoundBuffer& GetSoundBuffer(const std::string &filename);
 
@@ -25,8 +24,7 @@ private:
     std::map<std::string, sf::SoundBuffer> m_SoundBuffers;
 
     //Pointer to the singleton
-    static std::shared_ptr<ResourceManager> m_s_Instance;
-//    static ResourceManager* m_s_Instance;
+    static std::unique_ptr<ResourceManager> m_s_Instance;
 };
 
 
