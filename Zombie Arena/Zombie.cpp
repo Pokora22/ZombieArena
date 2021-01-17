@@ -40,8 +40,6 @@ Zombie::Zombie(int x, int y, ZombieHorde horde) : Entity(){
     modifier /= 100;
     m_Speed *= modifier;
 
-    std::cout << "Zombie speed: " << config.baseSpeed << std::endl;
-
     m_Audio = AttachComponent<AudioComponent>();
     m_Audio->AddAudio("explode", "../Resources/sound/pop.ogg");
     m_Audio->AddAudio("splat", "../Resources/sound/splat.wav");
